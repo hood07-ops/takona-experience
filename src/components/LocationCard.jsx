@@ -7,7 +7,7 @@ function LocationCard({ title, description, video }) {
       whileHover={{ y: -8, scale: 1.02 }}
       transition={{ duration: 0.25 }}
     >
-      <video autoPlay muted loop playsInline>
+      <video autoPlay muted loop playsInline preload="metadata">
         <source src={video} type="video/mp4" />
       </video>
 

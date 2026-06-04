@@ -4,19 +4,11 @@ import { motion } from "framer-motion";
 function Hero() {
   return (
     <section className="hero">
-      <video
-        className="hero-video"
-        autoPlay
-        muted
-        loop
-        playsInline
-      >
+      <video className="hero-video" autoPlay muted loop playsInline>
         <source src="/videos/rapanui.mp4" type="video/mp4" />
       </video>
 
       <div className="hero-overlay" />
-
-      <div className="hero-glow" />
 
       <motion.div
         className="hero-content"
@@ -24,18 +16,15 @@ function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <p className="hero-kicker">
-          RAPA NUI • MANA • CULTURA • HISTORIA
-        </p>
+        <p className="hero-kicker">RAPA NUI • MANA • CULTURA • HISTORIA</p>
 
-        <h1></h1>
+        <h1>TĀKONA</h1>
 
         <h2>EXPERIENCE RAPA NUI</h2>
 
         <p>
-          Vive una experiencia cultural auténtica con ,
-          vestimenta ancestral, fotografía profesional
-          y paisajes sagrados de Rapa Nui.
+          Vive una experiencia cultural auténtica con Tākona, vestimenta
+          ancestral, fotografía profesional y paisajes sagrados de Rapa Nui.
         </p>
 
         <div className="hero-buttons">

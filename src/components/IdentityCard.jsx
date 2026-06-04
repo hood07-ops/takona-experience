@@ -14,13 +14,15 @@ function IdentityCard({ title, description, image, imageFemale }) {
     return () => clearInterval(interval);
   }, [imageFemale]);
 
+  const currentImage = showFemale && imageFemale ? imageFemale : image;
+
   return (
     <motion.article
       className="identity-card"
       whileHover={{ y: -8, scale: 1.02 }}
       transition={{ duration: 0.25 }}
     >
-      <img src={showFemale && imageFemale ? imageFemale : image} alt={title} />
+      <img src={currentImage} alt={title} />
 
       <div className="identity-content">
         <h3>{title}</h3>
