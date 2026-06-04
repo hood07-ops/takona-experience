@@ -5,17 +5,17 @@ import PackageCard from "../components/PackageCard";
 import LocationCard from "../components/LocationCard";
 import SimboloCard from "../components/SimboloCard";
 
-import matatoaHombre from "../assets/takonas/matatoa-hombre.png";
-import matatoaMujer from "../assets/takonas/matatoa-mujer.png";
-import tangataHombre from "../assets/takonas/tangata-manu-hombre.png";
-import tangataMujer from "../assets/takonas/tangata-manu-mujer.png";
-import naveganteHombre from "../assets/takonas/navegante-hombre.png";
-import naveganteMujer from "../assets/takonas/navegante-mujer.png";
+import matatoaHombre from "../assets/takonas/matatoa-hombre.webp";
+import matatoaMujer from "../assets/takonas/matatoa-mujer.webp";
+import tangataHombre from "../assets/takonas/tangata-manu-hombre.webp";
+import tangataMujer from "../assets/takonas/tangata-manu-mujer.webp";
+import naveganteHombre from "../assets/takonas/navegante-hombre.webp";
+import naveganteMujer from "../assets/takonas/navegante-mujer.webp";
 
-import makemake from "../assets/simbolos/makemake.png";
-import manutara from "../assets/simbolos/manutara.png";
-import tangatamanu from "../assets/simbolos/tangatamanu.png";
-import navegante from "../assets/simbolos/navegante.png";
+import makemake from "../assets/simbolos/makemake.webp";
+import manutara from "../assets/simbolos/manutara.webp";
+import navegante from "../assets/simbolos/navegante.webp";
+import tangatamanu from "../assets/simbolos/tangatamanu.webp";
 
 function Home() {
   const identities = [

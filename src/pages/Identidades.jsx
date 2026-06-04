@@ -1,11 +1,11 @@
 import IdentityCard from "../components/IdentityCard";
 
-import matatoaHombre from "../assets/takonas/matatoa-hombre.png";
-import matatoaMujer from "../assets/takonas/matatoa-mujer.png";
-import tangataHombre from "../assets/takonas/tangata-manu-hombre.png";
-import tangataMujer from "../assets/takonas/tangata-manu-mujer.png";
-import naveganteHombre from "../assets/takonas/navegante-hombre.png";
-import naveganteMujer from "../assets/takonas/navegante-mujer.png";
+import matatoaHombre from "../assets/takonas/matatoa-hombre.webp";
+import matatoaMujer from "../assets/takonas/matatoa-mujer.webp";
+import tangataHombre from "../assets/takonas/tangata-manu-hombre.webp";
+import tangataMujer from "../assets/takonas/tangata-manu-mujer.webp";
+import naveganteHombre from "../assets/takonas/navegante-hombre.webp";
+import naveganteMujer from "../assets/takonas/navegante-mujer.webp";
 
 function Identidades() {
   const identities = [
