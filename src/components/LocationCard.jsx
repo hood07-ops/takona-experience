@@ -1,27 +1,32 @@
-import { useState } from "react";
-import { useLanguage } from "../context/useLanguage";
+import { useEffect, useRef, useState } from "react";
 
-function LocationCard({ title, description, video, image }) {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const { language } = useLanguage();
+function LocationCard({ title, description, video }) {
+  const cardRef = useRef(null);
+  const [canLoadVideo, setCanLoadVideo] = useState(false);
+
+  useEffect(() => {
+    const node = cardRef.current;
+    if (!node) return undefined;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setCanLoadVideo(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "420px" }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <article className="location-card">
-      {isPlaying ? (
-        <video autoPlay muted loop playsInline controls preload="metadata">
-          <source src={video} type="video/mp4" />
-        </video>
-      ) : (
-        <button
-          className="location-media"
-          type="button"
-          onClick={() => setIsPlaying(true)}
-          aria-label={`${language === "en" ? "Play video for" : "Ver video de"} ${title}`}
-        >
-          <img src={image} alt={title} loading="lazy" decoding="async" />
-          <span>{language === "en" ? "Play video" : "Ver video"}</span>
-        </button>
-      )}
+    <article className="location-card" ref={cardRef}>
+      <video autoPlay muted loop playsInline preload="metadata">
+        {canLoadVideo && <source src={video} type="video/mp4" />}
+      </video>
 
       <div>
         <h3>{title}</h3>

@@ -75,7 +75,7 @@ body {
 
 .hero {
   min-height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2000&auto=format&fit=crop");
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=70&w=1200&auto=format&fit=crop");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -84,6 +84,15 @@ body {
   align-items: center;
   text-align: center;
   padding: 120px 20px 60px;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .hero-overlay {
@@ -432,40 +441,12 @@ body {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
 }
 
-.location-card video,
-.location-media {
+.location-card video {
   width: 100%;
   height: 260px;
   display: block;
-}
-
-.location-media {
-  position: relative;
-  border: 0;
-  padding: 0;
-  overflow: hidden;
-  background: #000;
-  color: #111;
-  cursor: pointer;
-}
-
-.location-media img {
-  width: 100%;
-  height: 100%;
-  display: block;
   object-fit: cover;
-}
-
-.location-media span {
-  position: absolute;
-  left: 50%;
-  bottom: 18px;
-  transform: translateX(-50%);
-  padding: 10px 16px;
-  border-radius: 999px;
-  background: #d9a441;
-  font-weight: 800;
-  white-space: nowrap;
+  background: #000;
 }
 
 .location-card div {
@@ -571,16 +552,11 @@ body {
   z-index: 3;
 }
 
-.location-card video,
-.location-media {
+.location-card video {
   width: 100%;
   height: 260px;
   display: block;
   background: #000;
-}
-
-.location-card video {
-  object-fit: cover;
 }
 
 .identity-card img {
