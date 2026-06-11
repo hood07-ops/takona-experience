@@ -200,18 +200,22 @@ function Home() {
     {
       ...copy.locations[0],
       video: "/videos/anakena.mp4",
+      image: naveganteMujer,
     },
     {
       ...copy.locations[1],
       video: "/videos/Orongo.mp4",
+      image: tangataHombre,
     },
     {
       ...copy.locations[2],
       video: "/videos/RanoKau.mp4",
+      image: matatoaMujer,
     },
     {
       ...copy.locations[3],
       video: "/videos/tongariki.mp4",
+      image: matatoaHombre,
     },
   ];
 

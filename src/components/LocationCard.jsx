@@ -1,44 +1,33 @@
-import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
+import { useLanguage } from "../context/useLanguage";
 
-function LocationCard({ title, description, video }) {
-  const cardRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const node = cardRef.current;
-    if (!node) return undefined;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin: "180px" }
-    );
-
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, []);
+function LocationCard({ title, description, video, image }) {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const { language } = useLanguage();
 
   return (
-    <motion.article
-      ref={cardRef}
-      className="location-card"
-      whileHover={{ y: -8, scale: 1.02 }}
-      transition={{ duration: 0.25 }}
-    >
-      <video autoPlay={isVisible} muted loop playsInline preload="none">
-        {isVisible && <source src={video} type="video/mp4" />}
-      </video>
+    <article className="location-card">
+      {isPlaying ? (
+        <video autoPlay muted loop playsInline controls preload="metadata">
+          <source src={video} type="video/mp4" />
+        </video>
+      ) : (
+        <button
+          className="location-media"
+          type="button"
+          onClick={() => setIsPlaying(true)}
+          aria-label={`${language === "en" ? "Play video for" : "Ver video de"} ${title}`}
+        >
+          <img src={image} alt={title} loading="lazy" decoding="async" />
+          <span>{language === "en" ? "Play video" : "Ver video"}</span>
+        </button>
+      )}
 
       <div>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-    </motion.article>
+    </article>
   );
 }
 

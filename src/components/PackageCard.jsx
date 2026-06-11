@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useLanguage } from "../context/useLanguage";
 
 function PackageCard({ name, price, detail }) {
@@ -15,11 +14,7 @@ function PackageCard({ name, price, detail }) {
         };
 
   return (
-    <motion.article
-      className="package-card"
-      whileHover={{ y: -10, scale: 1.02 }}
-      transition={{ duration: 0.25 }}
-    >
+    <article className="package-card">
       <h3>{name}</h3>
       {price && <h2>{price}</h2>}
       <p>{detail}</p>
@@ -34,7 +29,7 @@ function PackageCard({ name, price, detail }) {
       >
         {text.reserve}
       </a>
-    </motion.article>
+    </article>
   );
 }
 

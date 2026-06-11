@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { useLanguage } from "../context/useLanguage";
 
 function IdentityCard({ title, description, image, imageFemale }) {
@@ -19,11 +18,7 @@ function IdentityCard({ title, description, image, imageFemale }) {
   const currentImage = showFemale && imageFemale ? imageFemale : image;
 
   return (
-    <motion.article
-      className="identity-card"
-      whileHover={{ y: -8, scale: 1.02 }}
-      transition={{ duration: 0.25 }}
-    >
+    <article className="identity-card">
       <img src={currentImage} alt={title} loading="lazy" decoding="async" />
 
       <div className="identity-content">
@@ -42,7 +37,7 @@ function IdentityCard({ title, description, image, imageFemale }) {
           </div>
         )}
       </div>
-    </motion.article>
+    </article>
   );
 }
 
