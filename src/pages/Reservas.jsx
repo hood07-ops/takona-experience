@@ -1,23 +1,66 @@
 import { useState } from "react";
+import { useLanguage } from "../context/useLanguage";
 
 function Reservas() {
+  const { language } = useLanguage();
+  const copy = {
+    es: {
+      title: "Reservas",
+      intro: "Completa tus datos y envía la solicitud directa por WhatsApp.",
+      name: "Nombre completo",
+      package: "Paquete",
+      people: "Personas",
+      premium: "Experiencia Premium",
+      cinematic: "Experiencia Cinemática",
+      one: "1 persona",
+      two: "2 personas",
+      group: "Grupo / familia",
+      send: "Enviar reserva por WhatsApp",
+      messageIntro: "Hola, quiero reservar una experiencia Tākona.",
+      date: "Fecha",
+    },
+    en: {
+      title: "Bookings",
+      intro: "Complete your details and send the request directly through WhatsApp.",
+      name: "Full name",
+      package: "Package",
+      people: "People",
+      premium: "Premium Experience",
+      cinematic: "Cinematic Experience",
+      one: "1 person",
+      two: "2 people",
+      group: "Group / family",
+      send: "Send booking on WhatsApp",
+      messageIntro: "Hello, I want to book a Tākona experience.",
+      date: "Date",
+    },
+  }[language];
+
   const [form, setForm] = useState({
     nombre: "",
     whatsapp: "",
     fecha: "",
-    paquete: "Experiencia Básica",
-    personas: "1 persona",
+    paquete: "premium",
+    personas: "1",
   });
 
-  const numeroWhatsApp = "56900000000";
+  const numeroWhatsApp = "56973199456";
 
-  const mensaje = `Hola, quiero reservar una experiencia .
+  const paqueteTexto = form.paquete === "cinematic" ? copy.cinematic : copy.premium;
+  const personasTexto =
+    form.personas === "group"
+      ? copy.group
+      : form.personas === "2"
+        ? copy.two
+        : copy.one;
 
-Nombre: ${form.nombre}
+  const mensaje = `${copy.messageIntro}
+
+${copy.name}: ${form.nombre}
 WhatsApp: ${form.whatsapp}
-Fecha: ${form.fecha}
-Paquete: ${form.paquete}
-Personas: ${form.personas}`;
+${copy.date}: ${form.fecha}
+${copy.package}: ${paqueteTexto}
+${copy.people}: ${personasTexto}`;
 
   function handleChange(e) {
     setForm({
@@ -28,16 +71,14 @@ Personas: ${form.personas}`;
 
   return (
     <main className="page">
-      <h1 className="section-title">Reservas</h1>
+      <h1 className="section-title">{copy.title}</h1>
 
-      <p className="section-text">
-        Completa tus datos y envía la solicitud directa por WhatsApp.
-      </p>
+      <p className="section-text">{copy.intro}</p>
 
       <form className="booking-form">
         <input
           name="nombre"
-          placeholder="Nombre completo"
+          placeholder={copy.name}
           value={form.nombre}
           onChange={handleChange}
         />
@@ -57,15 +98,14 @@ Personas: ${form.personas}`;
         />
 
         <select name="paquete" value={form.paquete} onChange={handleChange}>
-          <option>Experiencia Básica</option>
-          <option>Experiencia Premium</option>
-          <option>Experiencia Cinemática</option>
+          <option value="premium">{copy.premium}</option>
+          <option value="cinematic">{copy.cinematic}</option>
         </select>
 
         <select name="personas" value={form.personas} onChange={handleChange}>
-          <option>1 persona</option>
-          <option>2 personas</option>
-          <option>Grupo / familia</option>
+          <option value="1">{copy.one}</option>
+          <option value="2">{copy.two}</option>
+          <option value="group">{copy.group}</option>
         </select>
 
         <a
@@ -76,7 +116,7 @@ Personas: ${form.personas}`;
           target="_blank"
           rel="noreferrer"
         >
-          Enviar reserva por WhatsApp
+          {copy.send}
         </a>
       </form>
     </main>

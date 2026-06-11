@@ -1,5 +1,4 @@
-import Loader from "./components/Loader";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -8,26 +7,23 @@ import Identidades from "./pages/Identidades";
 import Reservas from "./pages/Reservas";
 import Galeria from "./pages/Galeria";
 import Cultura from "./pages/Cultura";
+import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="app">
-        <Loader />
-        
-        <Navbar />
+    <div className="app">
+      <Navbar />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/identidades" element={<Identidades />} />
-          <Route path="/reservas" element={<Reservas />} />
-          <Route path="/galeria" element={<Galeria />} />
-          <Route path="/cultura" element={<Cultura />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/identidades" element={<Identidades />} />
+        <Route path="/reservas" element={<Reservas />} />
+        <Route path="/galeria" element={<Galeria />} />
+        <Route path="/cultura" element={<Cultura />} />
+      </Routes>
 
-        <Footer />
-      </div>
-    </BrowserRouter>
+      <Footer />
+    </div>
   );
 }
 

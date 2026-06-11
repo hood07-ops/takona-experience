@@ -47,6 +47,32 @@ body {
   font-weight: bold;
 }
 
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px;
+  border: 1px solid rgba(240, 195, 106, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.language-switcher .language-btn {
+  min-width: 42px;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #f0c36a;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.language-switcher .language-btn.active {
+  background: #d9a441;
+  color: #111;
+}
+
 .hero {
   min-height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2000&auto=format&fit=crop");
@@ -314,6 +340,10 @@ body {
     justify-content: center;
   }
 
+  .language-switcher {
+    margin-top: 2px;
+  }
+
   .identity-card,
   .package-card {
     width: 100%;
@@ -540,4 +570,22 @@ body {
   height: 360px;
   object-fit: cover;
   display: block;
+}
+
+.reservation-form {
+  max-width: 850px;
+  margin: 45px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 15px;
+}
+
+.reservation-form input,
+.reservation-form select {
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  background: #151515;
+  color: white;
+  font-size: 1rem;
 }

@@ -29,11 +29,6 @@ function Home() {
 
   const packages = [
     {
-      name: "Experiencia Básica",
-      price: "$45.000 CLP",
-      detail: "Tākona + fotografías simples + 1 locación.",
-    },
-    {
       name: "Experiencia Premium",
       price: "$85.000 CLP",
       detail: "Tākona + traje tradicional + sesión profesional.",

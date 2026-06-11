@@ -1,4 +1,20 @@
+import { useLanguage } from "../context/useLanguage";
+
 function Galeria() {
+  const { language } = useLanguage();
+  const copy =
+    language === "en"
+      ? {
+          title: "Gallery",
+          text: "Photos and visual moments from the Tākona Experience.",
+          alt: "Tākona Experience",
+        }
+      : {
+          title: "Galería",
+          text: "Fotografías y experiencias visuales de Tākona Experience.",
+          alt: "Tākona Experience",
+        };
+
   const photos = [
     "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
     "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop",
@@ -8,15 +24,13 @@ function Galeria() {
 
   return (
     <main className="page">
-      <h1 className="section-title">Galería</h1>
+      <h1 className="section-title">{copy.title}</h1>
 
-      <p className="section-text">
-        Fotografías y experiencias visuales de  Experience.
-      </p>
+      <p className="section-text">{copy.text}</p>
 
       <div className="gallery-grid">
         {photos.map((photo) => (
-          <img key={photo} src={photo} alt=" Experience" />
+          <img key={photo} src={photo} alt={copy.alt} />
         ))}
       </div>
     </main>

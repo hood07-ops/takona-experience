@@ -1,19 +1,41 @@
 import { Link } from "react-router-dom";
+import { useLanguage } from "../context/useLanguage";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 function Navbar() {
+  const { language } = useLanguage();
+  const nav = {
+    es: {
+      home: "Inicio",
+      identities: "Identidades",
+      bookings: "Reservas",
+      gallery: "Galería",
+      culture: "Cultura",
+    },
+    en: {
+      home: "Home",
+      identities: "Identities",
+      bookings: "Bookings",
+      gallery: "Gallery",
+      culture: "Culture",
+    },
+  }[language];
+
   return (
     <nav className="navbar">
       <Link className="logo" to="/">
-        TĀKONA
+        Tākona
       </Link>
 
       <div className="nav-links">
-        <Link to="/">Inicio</Link>
-        <Link to="/identidades">Identidades</Link>
-        <Link to="/reservas">Reservas</Link>
-        <Link to="/galeria">Galería</Link>
-        <Link to="/cultura">Cultura</Link>
+        <Link to="/">{nav.home}</Link>
+        <Link to="/identidades">{nav.identities}</Link>
+        <Link to="/reservas">{nav.bookings}</Link>
+        <Link to="/galeria">{nav.gallery}</Link>
+        <Link to="/cultura">{nav.culture}</Link>
       </div>
+
+      <LanguageSwitcher />
     </nav>
   );
 }

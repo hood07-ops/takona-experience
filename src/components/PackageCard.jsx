@@ -1,6 +1,19 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "../context/useLanguage";
 
 function PackageCard({ name, price, detail }) {
+  const { language } = useLanguage();
+  const text =
+    language === "en"
+      ? {
+          reserve: "Book",
+          message: `Hello, I want to book: ${name}`,
+        }
+      : {
+          reserve: "Reservar",
+          message: `Hola, quiero reservar: ${name}`,
+        };
+
   return (
     <motion.article
       className="package-card"
@@ -8,18 +21,18 @@ function PackageCard({ name, price, detail }) {
       transition={{ duration: 0.25 }}
     >
       <h3>{name}</h3>
-      <h2>{price}</h2>
+      {price && <h2>{price}</h2>}
       <p>{detail}</p>
 
       <a
         className="gold-button"
-        href={`https://wa.me/56900000000?text=${encodeURIComponent(
-          `Hola, quiero reservar: ${name}`
+        href={`https://wa.me/56973199456?text=${encodeURIComponent(
+          text.message
         )}`}
         target="_blank"
         rel="noreferrer"
       >
-        Reservar
+        {text.reserve}
       </a>
     </motion.article>
   );

@@ -1,7 +1,7 @@
 function SimboloCard({ title, image, description }) {
   return (
     <article className="identity-card">
-      <img src={image} alt={title} />
+      <img src={image} alt={title} loading="lazy" decoding="async" />
 
       <div className="identity-content">
         <h3>{title}</h3>

@@ -12,7 +12,6 @@ function Reservas() {
         <input placeholder="WhatsApp" />
         <input type="date" />
         <select>
-          <option>Experiencia Básica</option>
           <option>Experiencia Premium</option>
           <option>Experiencia Cinemática</option>
         </select>
@@ -24,7 +23,7 @@ function Reservas() {
 
         <a
           className="gold-button"
-          href="https://wa.me/56900000000?text=Hola,%20quiero%20reservar%20una%20experiencia%20"
+          href="https://wa.me/56973199456?text=Hola,%20quiero%20reservar%20una%20experiencia%20"
           target="_blank"
           rel="noreferrer"
         >
