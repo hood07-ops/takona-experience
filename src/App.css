@@ -12,6 +12,23 @@ body {
 .app {
   min-height: 100vh;
   background: #050505;
+  position: relative;
+  isolation: isolate;
+}
+
+.app::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.22;
+  filter: blur(0.4px);
+  background-image:
+    linear-gradient(rgba(5, 5, 5, 0.36), rgba(5, 5, 5, 0.92)),
+    url("data:image/svg+xml,%3Csvg width='520' height='260' viewBox='0 0 520 260' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d9d9d9' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' opacity='.55'%3E%3Cpath d='M34 42c26-18 44-18 68 0-13 12-19 24-18 38-18-6-35-6-52 1 5-17 5-28 2-39Z'/%3E%3Cpath d='M142 65c20-31 45-31 72 0-22 5-34 18-37 39-8-20-20-33-35-39Z'/%3E%3Cpath d='M250 36c18 8 33 23 45 45-20-8-39-7-58 2 12-17 16-33 13-47Z'/%3E%3Cpath d='M340 72c21-19 44-19 68 0-17 6-27 19-30 39-8-19-20-32-38-39Z'/%3E%3Cpath d='M450 44c10 22 20 35 42 44-25 8-43 6-64-8 15-8 22-20 22-36Z'/%3E%3Cpath d='M58 154c18-18 39-20 62-5-20 6-32 19-36 40-6-17-15-29-26-35Z'/%3E%3Cpath d='M162 172c26-28 55-28 84 0-28 6-47 22-56 48-5-23-15-39-28-48Z'/%3E%3Cpath d='M286 150c18 5 34 18 50 39-24-5-42-1-56 11 10-17 12-34 6-50Z'/%3E%3Cpath d='M386 178c22-27 49-29 80-5-24 4-40 18-48 42-6-19-17-31-32-37Z'/%3E%3Cpath d='M44 112h82M150 118h95M272 112h76M374 118h98M32 218h105M168 224h88M286 218h80M394 224h92' opacity='.25'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover, 520px 260px;
+  background-position: center, center top;
 }
 
 .navbar {
@@ -155,7 +172,7 @@ body {
 }
 
 .dark-section {
-  background: #0d0d0d;
+  background: rgba(13, 13, 13, 0.88);
 }
 
 .section-title {
@@ -270,7 +287,7 @@ body {
 .page {
   min-height: 100vh;
   padding: 140px 20px 80px;
-  background: #050505;
+  background: transparent;
   color: white;
   text-align: center;
 }
@@ -465,7 +482,7 @@ body {
 }
 .builder-section {
   padding: 110px 20px;
-  background: #0d0d0d;
+  background: rgba(13, 13, 13, 0.88);
   text-align: center;
 }
 
