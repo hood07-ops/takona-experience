@@ -1,3 +1,7 @@
+:root {
+  --rongorongo-glyphs: url("data:image/svg+xml,%3Csvg width='900' height='900' viewBox='0 0 900 900' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d7d9da' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg opacity='.54' transform='translate(62 84) rotate(-8)'%3E%3Cpath d='M32 4c-10 16-10 31 1 45M33 20c18-15 35-15 49 1M33 48c11 13 26 18 44 14M28 50c-10 17-18 34-22 51M40 51c7 20 16 36 28 50'/%3E%3Cpath d='M13 82c13-9 25-9 36 0M60 85c-12-7-23-7-34 0'/%3E%3C/g%3E%3Cg opacity='.44' transform='translate(236 44) rotate(7)'%3E%3Cpath d='M26 6c16 10 26 25 31 45-19-9-37-6-54 8 16-18 23-35 23-53Z'/%3E%3Cpath d='M31 59c-12 13-16 29-13 48M38 58c10 12 18 27 23 45M17 84c15-8 30-8 45 0'/%3E%3C/g%3E%3Cg opacity='.50' transform='translate(432 96) rotate(-15)'%3E%3Cpath d='M12 58c18-46 46-58 83-38-26 8-40 26-42 54-12-15-26-20-41-16Z'/%3E%3Cpath d='M52 73c-4 20-2 38 7 55M42 91c17-9 33-9 50 0'/%3E%3C/g%3E%3Cg opacity='.46' transform='translate(720 58) rotate(11)'%3E%3Cpath d='M8 72c20-7 32-22 36-45 13 22 28 36 48 42-27 10-55 11-84 3Z'/%3E%3Cpath d='M43 28c-10-6-20-7-31-2M51 30c11-10 24-13 38-8'/%3E%3C/g%3E%3Cg opacity='.40' transform='translate(122 286) rotate(13)'%3E%3Cpath d='M42 4c-4 30 6 52 31 66-25 5-48 0-69-15 22-9 35-26 38-51Z'/%3E%3Cpath d='M31 65c-13 12-21 27-24 45M48 68c15 11 27 25 36 42'/%3E%3C/g%3E%3Cg opacity='.55' transform='translate(322 268) rotate(-4)'%3E%3Cpath d='M13 12c21 3 37 17 50 43-28-4-47 4-58 24 11-21 14-43 8-67Z'/%3E%3Cpath d='M50 57c19 6 32 19 38 39-19-8-35-5-48 9M27 72c-8 16-10 32-5 49'/%3E%3C/g%3E%3Cg opacity='.48' transform='translate(566 310) rotate(9)'%3E%3Cpath d='M38 2c-20 18-26 41-18 68M38 2c18 18 25 42 21 72M22 42c21-13 43-13 66 0M13 75c24 8 49 8 75 0M38 82c-7 16-7 32 0 48'/%3E%3C/g%3E%3Cg opacity='.38' transform='translate(746 280) rotate(-10)'%3E%3Cpath d='M10 93c22-19 31-46 27-81 24 20 40 45 48 76-27-14-52-12-75 5Z'/%3E%3Cpath d='M38 44c14-9 27-9 40 0M30 96c11 15 24 24 39 28'/%3E%3C/g%3E%3Cg opacity='.48' transform='translate(44 554) rotate(-13)'%3E%3Cpath d='M25 7c20 9 34 25 42 48-25-7-45-1-60 18 16-21 22-43 18-66Z'/%3E%3Cpath d='M31 72c-11 16-16 34-16 55M49 69c11 17 24 31 40 42M12 102c17-9 34-9 51 0'/%3E%3C/g%3E%3Cg opacity='.42' transform='translate(252 608) rotate(8)'%3E%3Cpath d='M6 62c24-32 53-40 88-24-24 11-37 31-40 60-16-21-32-33-48-36Z'/%3E%3Cpath d='M54 94c-1 19 5 36 17 51M33 113c16-12 34-15 55-8'/%3E%3C/g%3E%3Cg opacity='.50' transform='translate(504 566) rotate(-2)'%3E%3Cpath d='M18 8c18 8 30 23 37 46-18-11-34-12-50-3 13-14 17-29 13-43Z'/%3E%3Cpath d='M56 52c18-3 33 2 45 15-18 5-31 16-39 33M23 60c-8 21-7 41 5 61'/%3E%3C/g%3E%3Cg opacity='.40' transform='translate(712 620) rotate(16)'%3E%3Cpath d='M14 36c18-26 42-34 73-25-20 14-31 34-33 59-10-19-24-30-40-34Z'/%3E%3Cpath d='M20 72c20 13 42 16 65 8M35 82c-13 17-20 35-20 55M57 82c10 17 24 31 42 42'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -22,13 +26,14 @@ body {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  opacity: 0.22;
-  filter: blur(0.4px);
+  opacity: 0.19;
+  filter: blur(0.8px);
   background-image:
-    linear-gradient(rgba(5, 5, 5, 0.36), rgba(5, 5, 5, 0.92)),
-    url("data:image/svg+xml,%3Csvg width='520' height='260' viewBox='0 0 520 260' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d9d9d9' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' opacity='.55'%3E%3Cpath d='M34 42c26-18 44-18 68 0-13 12-19 24-18 38-18-6-35-6-52 1 5-17 5-28 2-39Z'/%3E%3Cpath d='M142 65c20-31 45-31 72 0-22 5-34 18-37 39-8-20-20-33-35-39Z'/%3E%3Cpath d='M250 36c18 8 33 23 45 45-20-8-39-7-58 2 12-17 16-33 13-47Z'/%3E%3Cpath d='M340 72c21-19 44-19 68 0-17 6-27 19-30 39-8-19-20-32-38-39Z'/%3E%3Cpath d='M450 44c10 22 20 35 42 44-25 8-43 6-64-8 15-8 22-20 22-36Z'/%3E%3Cpath d='M58 154c18-18 39-20 62-5-20 6-32 19-36 40-6-17-15-29-26-35Z'/%3E%3Cpath d='M162 172c26-28 55-28 84 0-28 6-47 22-56 48-5-23-15-39-28-48Z'/%3E%3Cpath d='M286 150c18 5 34 18 50 39-24-5-42-1-56 11 10-17 12-34 6-50Z'/%3E%3Cpath d='M386 178c22-27 49-29 80-5-24 4-40 18-48 42-6-19-17-31-32-37Z'/%3E%3Cpath d='M44 112h82M150 118h95M272 112h76M374 118h98M32 218h105M168 224h88M286 218h80M394 224h92' opacity='.25'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: cover, 520px 260px;
-  background-position: center, center top;
+    linear-gradient(rgba(5, 5, 5, 0.18), rgba(5, 5, 5, 0.86)),
+    var(--rongorongo-glyphs);
+  background-size: cover, min(980px, 120vw) min(980px, 120vw);
+  background-position: center, center 40px;
+  background-repeat: no-repeat, repeat-y;
 }
 
 .navbar {
@@ -169,10 +174,34 @@ body {
 .section {
   padding: 110px 20px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .dark-section {
   background: rgba(13, 13, 13, 0.88);
+}
+
+.dark-section::before,
+.builder-section::before,
+.page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.09;
+  filter: blur(0.45px);
+  background-image: var(--rongorongo-glyphs);
+  background-size: 760px 760px;
+  background-position: right -170px top -120px;
+  background-repeat: no-repeat;
+}
+
+.section > *,
+.builder-section > *,
+.page > * {
+  position: relative;
+  z-index: 1;
 }
 
 .section-title {
@@ -211,6 +240,7 @@ body {
   transition: 0.3s ease;
   text-align: left;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  position: relative;
 }
 
 .identity-card:hover,
@@ -290,6 +320,8 @@ body {
   background: transparent;
   color: white;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .booking-form {
@@ -334,6 +366,33 @@ body {
   border-radius: 25px;
   padding: 35px;
   text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.culture-box::before,
+.builder-result::before,
+.identity-card::before,
+.package-card::before,
+.location-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.055;
+  background-image: var(--rongorongo-glyphs);
+  background-size: 420px 420px;
+  background-position: right -160px top -90px;
+  background-repeat: no-repeat;
+}
+
+.culture-box > *,
+.builder-result > *,
+.identity-card > *,
+.package-card > *,
+.location-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .culture-box h2 {
@@ -456,6 +515,7 @@ body {
   overflow: hidden;
   text-align: left;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  position: relative;
 }
 
 .location-card video {
@@ -484,6 +544,8 @@ body {
   padding: 110px 20px;
   background: rgba(13, 13, 13, 0.88);
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .builder-grid {
@@ -523,6 +585,8 @@ body {
   padding: 30px;
   border-radius: 20px;
   border: 1px solid #333;
+  position: relative;
+  overflow: hidden;
 }
 
 .builder-result h3 {
