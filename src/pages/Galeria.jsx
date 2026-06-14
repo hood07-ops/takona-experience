@@ -1,26 +1,79 @@
 import { useLanguage } from "../context/useLanguage";
 
+const photos = [
+  {
+    id: "stage-dance",
+    src: "/gallery/takona-01.webp",
+    thumb: "/gallery/takona-01-thumb.webp",
+  },
+  {
+    id: "matatoa-ceremony",
+    src: "/gallery/takona-02.webp",
+    thumb: "/gallery/takona-02-thumb.webp",
+  },
+  {
+    id: "guardian",
+    src: "/gallery/takona-03.webp",
+    thumb: "/gallery/takona-03-thumb.webp",
+  },
+  {
+    id: "warrior",
+    src: "/gallery/takona-04.webp",
+    thumb: "/gallery/takona-04-thumb.webp",
+  },
+  {
+    id: "white-feathers",
+    src: "/gallery/takona-05.webp",
+    thumb: "/gallery/takona-05-thumb.webp",
+  },
+  {
+    id: "children",
+    src: "/gallery/takona-06.webp",
+    thumb: "/gallery/takona-06-thumb.webp",
+  },
+  {
+    id: "dance",
+    src: "/gallery/takona-07.webp",
+    thumb: "/gallery/takona-07-thumb.webp",
+  },
+  {
+    id: "white-takona",
+    src: "/gallery/takona-08.webp",
+    thumb: "/gallery/takona-08-thumb.webp",
+  },
+  {
+    id: "woman-takona",
+    src: "/gallery/takona-09.webp",
+    thumb: "/gallery/takona-09-thumb.webp",
+  },
+  {
+    id: "ceremony-group",
+    src: "/gallery/takona-10.webp",
+    thumb: "/gallery/takona-10-thumb.webp",
+  },
+  {
+    id: "night-performance",
+    src: "/gallery/takona-11.webp",
+    thumb: "/gallery/takona-11-thumb.webp",
+  },
+];
+
 function Galeria() {
   const { language } = useLanguage();
   const copy =
     language === "en"
       ? {
           title: "Gallery",
-          text: "Photos and visual moments from the Tākona Experience.",
+          text: "Real moments of body painting, dance and Rapa Nui ceremonial expression.",
           alt: "Tākona Experience",
+          open: "Open photo",
         }
       : {
           title: "Galería",
-          text: "Fotografías y experiencias visuales de Tākona Experience.",
+          text: "Momentos reales de pintura corporal, danza y expresión ceremonial Rapa Nui.",
           alt: "Tākona Experience",
+          open: "Abrir foto",
         };
-
-  const photos = [
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=70&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=70&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=70&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=70&w=800&auto=format&fit=crop",
-  ];
 
   return (
     <main className="page">
@@ -30,7 +83,16 @@ function Galeria() {
 
       <div className="gallery-grid">
         {photos.map((photo) => (
-          <img key={photo} src={photo} alt={copy.alt} loading="lazy" decoding="async" />
+          <a
+            className="gallery-item"
+            key={photo.id}
+            href={photo.src}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`${copy.open}: ${copy.alt}`}
+          >
+            <img src={photo.thumb} alt={copy.alt} loading="lazy" decoding="async" />
+          </a>
         ))}
       </div>
     </main>

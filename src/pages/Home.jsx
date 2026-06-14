@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ExperienceBuilder from "../components/ExperienceBuilder";
 import Hero from "../components/Hero";
 import IdentityCard from "../components/IdentityCard";
@@ -31,6 +32,10 @@ function Home() {
       placesTitle: "Lugares de experiencia",
       placesText:
         "Elige una locación sagrada, natural o cinematográfica para tu sesión.",
+      galleryTitle: "Momentos reales",
+      galleryText:
+        "Danza, pintura corporal y expresión cultural capturadas en Rapa Nui.",
+      galleryCta: "Ver galería completa",
       packagesTitle: "Paquetes",
       packagesText:
         "Experiencias diseñadas para turistas, parejas y creadores de contenido.",
@@ -99,6 +104,10 @@ function Home() {
       placesTitle: "Experience locations",
       placesText:
         "Choose a sacred, natural or cinematic location for your session.",
+      galleryTitle: "Real moments",
+      galleryText:
+        "Dance, body painting and cultural expression captured in Rapa Nui.",
+      galleryCta: "View full gallery",
       packagesTitle: "Packages",
       packagesText:
         "Experiences designed for travelers, couples and content creators.",
@@ -261,6 +270,37 @@ function Home() {
             <LocationCard key={item.title} {...item} />
           ))}
         </div>
+      </section>
+
+      <section className="section dark-section gallery-preview-section">
+        <h2 className="section-title">{copy.galleryTitle}</h2>
+
+        <p className="section-text">{copy.galleryText}</p>
+
+        <div className="gallery-preview">
+          <img
+            src="/gallery/takona-02-thumb.webp"
+            alt="Tākona Rapa Nui"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            src="/gallery/takona-08-thumb.webp"
+            alt="Tākona Rapa Nui"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            src="/gallery/takona-01-thumb.webp"
+            alt="Tākona Rapa Nui"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <Link className="gold-button gallery-preview-button" to="/galeria">
+          {copy.galleryCta}
+        </Link>
       </section>
 
       <section className="section dark-section">
