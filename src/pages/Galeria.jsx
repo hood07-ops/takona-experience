@@ -82,7 +82,7 @@ function Galeria() {
       <p className="section-text">{copy.text}</p>
 
       <div className="gallery-grid">
-        {photos.map((photo) => (
+        {photos.map((photo, index) => (
           <a
             className="gallery-item"
             key={photo.id}
@@ -91,7 +91,13 @@ function Galeria() {
             rel="noreferrer"
             aria-label={`${copy.open}: ${copy.alt}`}
           >
-            <img src={photo.thumb} alt={copy.alt} loading="lazy" decoding="async" />
+            <img
+              src={photo.src}
+              alt={copy.alt}
+              loading={index < 4 ? "eager" : "lazy"}
+              fetchPriority={index < 4 ? "high" : "auto"}
+              decoding="async"
+            />
           </a>
         ))}
       </div>
