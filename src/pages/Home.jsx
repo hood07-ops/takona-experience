@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import ExperienceBuilder from "../components/ExperienceBuilder";
+﻿import ExperienceBuilder from "../components/ExperienceBuilder";
 import Hero from "../components/Hero";
 import IdentityCard from "../components/IdentityCard";
 import PackageCard from "../components/PackageCard";
@@ -25,39 +24,39 @@ function Home() {
     es: {
       identitiesTitle: "Elige tu identidad",
       identitiesText:
-        "Cada experiencia representa una conexión espiritual y cultural con Rapa Nui.",
-      symbolsTitle: "Simbología ancestral",
+        "Cada experiencia representa una conexiÃ³n espiritual y cultural con Rapa Nui.",
+      symbolsTitle: "SimbologÃ­a ancestral",
       symbolsText:
-        "Conoce algunos de los símbolos más importantes de la cultura Rapa Nui.",
+        "Conoce algunos de los sÃ­mbolos mÃ¡s importantes de la cultura Rapa Nui.",
       placesTitle: "Lugares de experiencia",
       placesText:
-        "Elige una locación sagrada, natural o cinematográfica para tu sesión.",
+        "Elige una locaciÃ³n sagrada, natural o cinematogrÃ¡fica para tu sesiÃ³n.",
       galleryTitle: "Momentos reales",
       galleryText:
-        "Danza, pintura corporal y expresión cultural capturadas en Rapa Nui.",
-      galleryCta: "Ver galería completa",
+        "Danza, pintura corporal y expresiÃ³n cultural capturadas en Rapa Nui.",
+      galleryCta: "Ver galerÃ­a completa",
       packagesTitle: "Paquetes",
       packagesText:
-        "Experiencias diseñadas para turistas, parejas y creadores de contenido.",
+        "Experiencias diseÃ±adas para turistas, parejas y creadores de contenido.",
       identities: [
         {
           title: "Matato'a",
-          description: "Fuerza, protección y espíritu guerrero ancestral.",
+          description: "Fuerza, protecciÃ³n y espÃ­ritu guerrero ancestral.",
         },
         {
           title: "Tangata Manu",
-          description: "Sabiduría ancestral, conexión espiritual y visión.",
+          description: "SabidurÃ­a ancestral, conexiÃ³n espiritual y visiÃ³n.",
         },
         {
-          title: "Navegante Polinésico",
-          description: "Explorador guiado por las estrellas y el océano.",
+          title: "Navegante PolinÃ©sico",
+          description: "Explorador guiado por las estrellas y el ocÃ©ano.",
         },
       ],
       symbols: [
         {
           title: "Make Make",
           description:
-            "Deidad creadora de Rapa Nui, símbolo de fertilidad, abundancia y origen de la vida.",
+            "Deidad creadora de Rapa Nui, sÃ­mbolo de fertilidad, abundancia y origen de la vida.",
         },
         {
           title: "Manutara",
@@ -67,28 +66,28 @@ function Home() {
         {
           title: "Tangata Manu",
           description:
-            "Representación del Hombre Pájaro, liderazgo, valentía y conexión espiritual.",
+            "RepresentaciÃ³n del Hombre PÃ¡jaro, liderazgo, valentÃ­a y conexiÃ³n espiritual.",
         },
         {
-          title: "Navegación Polinésica",
+          title: "NavegaciÃ³n PolinÃ©sica",
           description:
-            "Arte ancestral de navegar guiado por las estrellas, el viento y el océano.",
+            "Arte ancestral de navegar guiado por las estrellas, el viento y el ocÃ©ano.",
         },
       ],
       locations: [
-        { title: "Anakena", description: "Arena blanca, mar turquesa y energía ancestral." },
-        { title: "Orongo", description: "Historia del Tangata Manu y vista al océano profundo." },
-        { title: "Rano Kau", description: "Volcán, niebla y paisaje ceremonial." },
+        { title: "Anakena", description: "Arena blanca, mar turquesa y energÃ­a ancestral." },
+        { title: "Orongo", description: "Historia del Tangata Manu y vista al ocÃ©ano profundo." },
+        { title: "Rano Kau", description: "VolcÃ¡n, niebla y paisaje ceremonial." },
         { title: "Tongariki", description: "Moais, amanecer y presencia ancestral." },
       ],
       packages: [
         {
           name: "Experiencia Premium",
           price: "$85.000 CLP",
-          detail: "Tākona + traje + sesión profesional.",
+          detail: "TÄkona + traje + sesiÃ³n profesional.",
         },
         {
-          name: "Experiencia Cinemática",
+          name: "Experiencia CinemÃ¡tica",
           price: "$150.000 CLP",
           detail: "Fotos + video reel + historia cultural.",
         },
@@ -157,7 +156,7 @@ function Home() {
         {
           name: "Premium Experience",
           price: "$85.000 CLP",
-          detail: "Tākona + outfit + professional session.",
+          detail: "TÄkona + outfit + professional session.",
         },
         {
           name: "Cinematic Experience",
@@ -270,37 +269,6 @@ function Home() {
             <LocationCard key={item.title} {...item} />
           ))}
         </div>
-      </section>
-
-      <section className="section dark-section gallery-preview-section">
-        <h2 className="section-title">{copy.galleryTitle}</h2>
-
-        <p className="section-text">{copy.galleryText}</p>
-
-        <div className="gallery-preview">
-          <img
-            src="/gallery/takona-02-thumb.webp"
-            alt="Tākona Rapa Nui"
-            loading="lazy"
-            decoding="async"
-          />
-          <img
-            src="/gallery/takona-08-thumb.webp"
-            alt="Tākona Rapa Nui"
-            loading="lazy"
-            decoding="async"
-          />
-          <img
-            src="/gallery/takona-01-thumb.webp"
-            alt="Tākona Rapa Nui"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
-
-        <Link className="gold-button gallery-preview-button" to="/galeria">
-          {copy.galleryCta}
-        </Link>
       </section>
 
       <section className="section dark-section">
