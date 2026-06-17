@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/gallery/:path*",
+      "destination": "/galeria",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
