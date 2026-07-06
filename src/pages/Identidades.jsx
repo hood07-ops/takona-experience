@@ -39,7 +39,7 @@ function Identidades() {
         },
         {
           title: "Tangata Manu",
-          description: "Wisdom, vision and spiritual connection.",
+          description: "Wisdom, vision, and spiritual connection.",
         },
         {
           title: "Polynesian Navigator",

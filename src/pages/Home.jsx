@@ -1,4 +1,4 @@
-﻿import ExperienceBuilder from "../components/ExperienceBuilder";
+import ExperienceBuilder from "../components/ExperienceBuilder";
 import Hero from "../components/Hero";
 import IdentityCard from "../components/IdentityCard";
 import PackageCard from "../components/PackageCard";
@@ -24,39 +24,35 @@ function Home() {
     es: {
       identitiesTitle: "Elige tu identidad",
       identitiesText:
-        "Cada experiencia representa una conexiÃ³n espiritual y cultural con Rapa Nui.",
-      symbolsTitle: "SimbologÃ­a ancestral",
+        "Cada experiencia representa una conexión espiritual y cultural con Rapa Nui.",
+      symbolsTitle: "Simbología ancestral",
       symbolsText:
-        "Conoce algunos de los sÃ­mbolos mÃ¡s importantes de la cultura Rapa Nui.",
+        "Conoce algunos de los símbolos más importantes de la cultura Rapa Nui.",
       placesTitle: "Lugares de experiencia",
       placesText:
-        "Elige una locaciÃ³n sagrada, natural o cinematogrÃ¡fica para tu sesiÃ³n.",
-      galleryTitle: "Momentos reales",
-      galleryText:
-        "Danza, pintura corporal y expresiÃ³n cultural capturadas en Rapa Nui.",
-      galleryCta: "Ver galerÃ­a completa",
+        "Elige una locación sagrada, natural o cinematográfica para tu sesión.",
       packagesTitle: "Paquetes",
       packagesText:
-        "Experiencias diseÃ±adas para turistas, parejas y creadores de contenido.",
+        "Experiencias diseñadas para turistas, parejas y creadores de contenido.",
       identities: [
         {
           title: "Matato'a",
-          description: "Fuerza, protecciÃ³n y espÃ­ritu guerrero ancestral.",
+          description: "Fuerza, protección y espíritu guerrero ancestral.",
         },
         {
           title: "Tangata Manu",
-          description: "SabidurÃ­a ancestral, conexiÃ³n espiritual y visiÃ³n.",
+          description: "Sabiduría ancestral, conexión espiritual y visión.",
         },
         {
-          title: "Navegante PolinÃ©sico",
-          description: "Explorador guiado por las estrellas y el ocÃ©ano.",
+          title: "Navegante Polinésico",
+          description: "Explorador guiado por las estrellas y el océano.",
         },
       ],
       symbols: [
         {
           title: "Make Make",
           description:
-            "Deidad creadora de Rapa Nui, sÃ­mbolo de fertilidad, abundancia y origen de la vida.",
+            "Deidad creadora de Rapa Nui, símbolo de fertilidad, abundancia y origen de la vida.",
         },
         {
           title: "Manutara",
@@ -66,28 +62,28 @@ function Home() {
         {
           title: "Tangata Manu",
           description:
-            "RepresentaciÃ³n del Hombre PÃ¡jaro, liderazgo, valentÃ­a y conexiÃ³n espiritual.",
+            "Representación del Hombre Pájaro, liderazgo, valentía y conexión espiritual.",
         },
         {
-          title: "NavegaciÃ³n PolinÃ©sica",
+          title: "Navegación Polinésica",
           description:
-            "Arte ancestral de navegar guiado por las estrellas, el viento y el ocÃ©ano.",
+            "Arte ancestral de navegar guiado por las estrellas, el viento y el océano.",
         },
       ],
       locations: [
-        { title: "Anakena", description: "Arena blanca, mar turquesa y energÃ­a ancestral." },
-        { title: "Orongo", description: "Historia del Tangata Manu y vista al ocÃ©ano profundo." },
-        { title: "Rano Kau", description: "VolcÃ¡n, niebla y paisaje ceremonial." },
-        { title: "Tongariki", description: "Moais, amanecer y presencia ancestral." },
+        { title: "Anakena", description: "Arena blanca, mar turquesa y energía ancestral." },
+        { title: "Orongo", description: "Historia del Tangata Manu y vista al océano profundo." },
+        { title: "Rano Kau", description: "Volcán, niebla y paisaje ceremonial." },
+        { title: "Tongariki", description: "Moáis, amanecer y presencia ancestral." },
       ],
       packages: [
         {
           name: "Experiencia Premium",
           price: "$85.000 CLP",
-          detail: "TÄkona + traje + sesiÃ³n profesional.",
+          detail: "Tākona + traje + sesión profesional.",
         },
         {
-          name: "Experiencia CinemÃ¡tica",
+          name: "Experiencia Cinemática",
           price: "$150.000 CLP",
           detail: "Fotos + video reel + historia cultural.",
         },
@@ -102,22 +98,18 @@ function Home() {
         "Discover some of the most meaningful symbols of Rapa Nui culture.",
       placesTitle: "Experience locations",
       placesText:
-        "Choose a sacred, natural or cinematic location for your session.",
-      galleryTitle: "Real moments",
-      galleryText:
-        "Dance, body painting and cultural expression captured in Rapa Nui.",
-      galleryCta: "View full gallery",
+        "Choose a sacred, natural, or cinematic location for your session.",
       packagesTitle: "Packages",
       packagesText:
-        "Experiences designed for travelers, couples and content creators.",
+        "Experiences designed for travelers, couples, and content creators.",
       identities: [
         {
           title: "Matato'a",
-          description: "Strength, protection and ancestral warrior spirit.",
+          description: "Strength, protection, and ancestral warrior spirit.",
         },
         {
           title: "Tangata Manu",
-          description: "Ancestral wisdom, spiritual connection and vision.",
+          description: "Ancestral wisdom, spiritual connection, and vision.",
         },
         {
           title: "Polynesian Navigator",
@@ -128,7 +120,7 @@ function Home() {
         {
           title: "Make Make",
           description:
-            "Creator deity of Rapa Nui, symbol of fertility, abundance and the origin of life.",
+            "Creator deity of Rapa Nui, symbol of fertility, abundance, and the origin of life.",
         },
         {
           title: "Manutara",
@@ -138,25 +130,25 @@ function Home() {
         {
           title: "Tangata Manu",
           description:
-            "The Birdman symbol: leadership, courage and spiritual connection.",
+            "The Birdman symbol: leadership, courage, and spiritual connection.",
         },
         {
           title: "Polynesian Navigation",
           description:
-            "Ancestral navigation guided by stars, wind and ocean knowledge.",
+            "Ancestral navigation guided by the stars, wind, and ocean knowledge.",
         },
       ],
       locations: [
-        { title: "Anakena", description: "White sand, turquoise sea and ancestral energy." },
+        { title: "Anakena", description: "White sand, turquoise sea, and ancestral energy." },
         { title: "Orongo", description: "Tangata Manu history and a deep ocean view." },
-        { title: "Rano Kau", description: "Volcano, mist and ceremonial landscape." },
-        { title: "Tongariki", description: "Moai, sunrise and ancestral presence." },
+        { title: "Rano Kau", description: "Volcano, mist, and ceremonial landscape." },
+        { title: "Tongariki", description: "Moai, sunrise, and ancestral presence." },
       ],
       packages: [
         {
           name: "Premium Experience",
           price: "$85.000 CLP",
-          detail: "TÄkona + outfit + professional session.",
+          detail: "Tākona + outfit + professional session.",
         },
         {
           name: "Cinematic Experience",

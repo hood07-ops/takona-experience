@@ -5,16 +5,16 @@ function Hero() {
   const { language } = useLanguage();
   const copy = {
     es: {
-      kicker: "RAPA NUI • MANA • CULTURA • HISTORIA",
-      subtitle: "EXPERIENCE RAPA NUI",
+      kicker: "RAPA NUI · MANA · CULTURA · HISTORIA",
+      subtitle: "EXPERIENCIA RAPA NUI",
       text: "Vive una experiencia cultural auténtica con Tākona, vestimenta ancestral, fotografía profesional y paisajes sagrados de Rapa Nui.",
       reserve: "Reservar experiencia",
       culture: "Explorar cultura",
     },
     en: {
-      kicker: "RAPA NUI • MANA • CULTURE • HISTORY",
+      kicker: "RAPA NUI · MANA · CULTURE · HISTORY",
       subtitle: "RAPA NUI EXPERIENCE",
-      text: "Live an authentic cultural experience with Tākona body painting, ancestral dress, professional photography and sacred Rapa Nui landscapes.",
+      text: "Live an authentic cultural experience with Tākona body painting, ancestral dress, professional photography, and sacred Rapa Nui landscapes.",
       reserve: "Book experience",
       culture: "Explore culture",
     },

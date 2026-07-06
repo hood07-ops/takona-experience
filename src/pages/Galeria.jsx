@@ -9,8 +9,8 @@ function Galeria() {
           text: "The gallery is being updated.",
         }
       : {
-          title: "Galeria",
-          text: "La galeria esta en actualizacion.",
+          title: "Galería",
+          text: "La galería está en actualización.",
         };
 
   return (

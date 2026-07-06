@@ -19,7 +19,7 @@ function Cultura() {
       title: "Rapa Nui culture",
       whatTitle: "What is Tākona?",
       whatText:
-        "Tākona is an ancestral form of body painting connected to symbols, identity, territory and Rapa Nui spirituality.",
+        "Tākona is an ancestral form of body painting connected to symbols, identity, territory, and Rapa Nui spirituality.",
       respectTitle: "Cultural respect",
       respectText:
         "This experience shares culture through respect and conscious cultural education.",
