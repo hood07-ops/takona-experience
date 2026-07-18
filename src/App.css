@@ -314,6 +314,12 @@ body {
   transform: translateY(-3px);
 }
 
+.gold-button.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  filter: grayscale(0.35);
+}
+
 .page {
   min-height: 100vh;
   padding: 140px 20px 80px;
@@ -466,6 +472,70 @@ body {
   line-height: 1.8;
 }
 
+.process-section {
+  background: rgba(5, 5, 5, 0.72);
+}
+
+.process-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.process-card {
+  min-height: 260px;
+  padding: 28px;
+  border: 1px solid rgba(240, 195, 106, 0.18);
+  background: rgba(20, 20, 20, 0.92);
+  border-radius: 18px;
+  text-align: left;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+}
+
+.process-card span {
+  color: rgba(240, 195, 106, 0.45);
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.process-card h3 {
+  color: #f0c36a;
+  margin: 20px 0 12px;
+}
+
+.process-card p {
+  color: #ccc;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.form-helper {
+  margin: 0;
+  color: #d7b06d;
+  line-height: 1.5;
+}
+
+.form-helper.ready {
+  color: #9ed88f;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 120;
+  padding: 14px 20px;
+  border-radius: 999px;
+  background: #25d366;
+  color: #07120a;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.38);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
 .footer {
   text-align: center;
   padding: 45px 20px;
@@ -521,6 +591,20 @@ body {
   .gallery-preview img:nth-child(2) {
     height: 260px;
     margin-top: 0;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-card {
+    min-height: auto;
+  }
+
+  .floating-whatsapp {
+    right: 14px;
+    bottom: 14px;
+    padding: 12px 16px;
   }
 }
 .hero {

@@ -18,6 +18,8 @@ function Reservas() {
       send: "Enviar reserva por WhatsApp",
       messageIntro: "Hola, quiero reservar una experiencia Tākona.",
       date: "Fecha",
+      missing: "Completa nombre, WhatsApp y fecha para activar la reserva.",
+      ready: "Listo. Puedes enviar tu solicitud por WhatsApp.",
     },
     en: {
       title: "Bookings",
@@ -33,6 +35,8 @@ function Reservas() {
       send: "Send booking on WhatsApp",
       messageIntro: "Hello, I want to book a Tākona experience.",
       date: "Date",
+      missing: "Complete your name, WhatsApp, and date to activate booking.",
+      ready: "Ready. You can send your request on WhatsApp.",
     },
   }[language];
 
@@ -53,6 +57,10 @@ function Reservas() {
       : form.personas === "2"
         ? copy.two
         : copy.one;
+  const isReady =
+    form.nombre.trim().length > 1 &&
+    form.whatsapp.trim().length > 5 &&
+    form.fecha.trim().length > 0;
 
   const mensaje = `${copy.messageIntro}
 
@@ -81,6 +89,7 @@ ${copy.people}: ${personasTexto}`;
           placeholder={copy.name}
           value={form.nombre}
           onChange={handleChange}
+          required
         />
 
         <input
@@ -88,6 +97,7 @@ ${copy.people}: ${personasTexto}`;
           placeholder="WhatsApp"
           value={form.whatsapp}
           onChange={handleChange}
+          required
         />
 
         <input
@@ -95,6 +105,7 @@ ${copy.people}: ${personasTexto}`;
           type="date"
           value={form.fecha}
           onChange={handleChange}
+          required
         />
 
         <select name="paquete" value={form.paquete} onChange={handleChange}>
@@ -108,13 +119,22 @@ ${copy.people}: ${personasTexto}`;
           <option value="group">{copy.group}</option>
         </select>
 
+        <p className={isReady ? "form-helper ready" : "form-helper"}>
+          {isReady ? copy.ready : copy.missing}
+        </p>
+
         <a
-          className="gold-button"
-          href={`https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(
-            mensaje
-          )}`}
+          className={isReady ? "gold-button" : "gold-button disabled"}
+          href={
+            isReady
+              ? `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(
+                  mensaje
+                )}`
+              : undefined
+          }
           target="_blank"
           rel="noreferrer"
+          aria-disabled={!isReady}
         >
           {copy.send}
         </a>

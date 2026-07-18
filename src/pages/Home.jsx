@@ -34,6 +34,31 @@ function Home() {
       packagesTitle: "Paquetes",
       packagesText:
         "Experiencias diseñadas para turistas, parejas y creadores de contenido.",
+      processTitle: "Cómo funciona",
+      processText:
+        "Un recorrido simple, cuidado y pensado para que vivas Tākona con sentido cultural.",
+      process: [
+        {
+          step: "01",
+          title: "Elige tu identidad",
+          text: "Selecciona Matato'a, Tangata Manu o Navegante Polinésico según la energía que quieres representar.",
+        },
+        {
+          step: "02",
+          title: "Definimos lugar y fecha",
+          text: "Coordinamos la sesión en una locación natural o ceremonial de Rapa Nui.",
+        },
+        {
+          step: "03",
+          title: "Vives la experiencia",
+          text: "Aplicamos la pintura corporal, vestimenta y guía cultural antes de la sesión.",
+        },
+        {
+          step: "04",
+          title: "Recibes tu registro",
+          text: "Te llevas fotos profesionales y, si eliges el paquete cinemático, un video reel.",
+        },
+      ],
       identities: [
         {
           title: "Matato'a",
@@ -102,6 +127,31 @@ function Home() {
       packagesTitle: "Packages",
       packagesText:
         "Experiences designed for travelers, couples, and content creators.",
+      processTitle: "How it works",
+      processText:
+        "A simple, thoughtful flow designed so you can experience Tākona with cultural meaning.",
+      process: [
+        {
+          step: "01",
+          title: "Choose your identity",
+          text: "Select Matato'a, Tangata Manu, or Polynesian Navigator based on the energy you want to represent.",
+        },
+        {
+          step: "02",
+          title: "Set place and date",
+          text: "We coordinate the session in a natural or ceremonial Rapa Nui location.",
+        },
+        {
+          step: "03",
+          title: "Live the experience",
+          text: "Body painting, ancestral dress, and cultural guidance come before the session.",
+        },
+        {
+          step: "04",
+          title: "Receive your memories",
+          text: "You receive professional photos and, with the cinematic package, a video reel.",
+        },
+      ],
       identities: [
         {
           title: "Matato'a",
@@ -259,6 +309,22 @@ function Home() {
         <div className="grid">
           {locations.map((item) => (
             <LocationCard key={item.title} {...item} />
+          ))}
+        </div>
+      </section>
+
+      <section className="section process-section">
+        <h2 className="section-title">{copy.processTitle}</h2>
+
+        <p className="section-text">{copy.processText}</p>
+
+        <div className="process-grid">
+          {copy.process.map((item) => (
+            <article className="process-card" key={item.step}>
+              <span>{item.step}</span>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
           ))}
         </div>
       </section>
