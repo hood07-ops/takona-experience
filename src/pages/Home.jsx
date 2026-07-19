@@ -9,7 +9,6 @@ import { useLanguage } from "../context/useLanguage";
 import matatoaHombre from "../assets/takonas/matatoa-hombre.webp";
 import matatoaMujer from "../assets/takonas/matatoa-mujer.webp";
 import tangataHombre from "../assets/takonas/tangata-manu-hombre.webp";
-import tangataMujer from "../assets/takonas/tangata-manu-mujer.webp";
 import naveganteHombre from "../assets/takonas/navegante-hombre.webp";
 import naveganteMujer from "../assets/takonas/navegante-mujer.webp";
 
@@ -31,46 +30,30 @@ function Home() {
       placesTitle: "Lugares de experiencia",
       placesText:
         "Elige una locación sagrada, natural o cinematográfica para tu sesión.",
-      packagesTitle: "Paquetes",
-      packagesText:
-        "Experiencias diseñadas para turistas, parejas y creadores de contenido.",
       processTitle: "Cómo funciona",
       processText:
         "Un recorrido simple, cuidado y pensado para que vivas Tākona con sentido cultural.",
-      process: [
-        {
-          step: "01",
-          title: "Elige tu identidad",
-          text: "Selecciona Matato'a, Tangata Manu o Navegante Polinésico según la energía que quieres representar.",
-        },
-        {
-          step: "02",
-          title: "Definimos lugar y fecha",
-          text: "Coordinamos la sesión en una locación natural o ceremonial de Rapa Nui.",
-        },
-        {
-          step: "03",
-          title: "Vives la experiencia",
-          text: "Aplicamos la pintura corporal, vestimenta y guía cultural antes de la sesión.",
-        },
-        {
-          step: "04",
-          title: "Recibes tu registro",
-          text: "Te llevas fotos profesionales y, si eliges el paquete cinemático, un video reel.",
-        },
-      ],
+      packagesTitle: "Paquetes",
+      packagesText:
+        "Experiencias diseñadas para turistas, parejas y creadores de contenido.",
       identities: [
         {
           title: "Matato'a",
           description: "Fuerza, protección y espíritu guerrero ancestral.",
+          meaning: "Identidad de defensa, liderazgo y presencia ceremonial.",
+          traits: ["Fuerza", "Protección", "Valentía"],
         },
         {
           title: "Tangata Manu",
           description: "Sabiduría ancestral, conexión espiritual y visión.",
+          meaning: "Inspirado en Orongo, el ave sagrada y la transformación ritual.",
+          traits: ["Visión", "Espíritu", "Transformación"],
         },
         {
           title: "Navegante Polinésico",
           description: "Explorador guiado por las estrellas y el océano.",
+          meaning: "Representa viaje, orientación y memoria ancestral del Pacífico.",
+          traits: ["Océano", "Estrellas", "Camino"],
         },
       ],
       symbols: [
@@ -101,6 +84,28 @@ function Home() {
         { title: "Rano Kau", description: "Volcán, niebla y paisaje ceremonial." },
         { title: "Tongariki", description: "Moáis, amanecer y presencia ancestral." },
       ],
+      process: [
+        {
+          step: "01",
+          title: "Elige tu identidad",
+          text: "Selecciona Matato'a, Tangata Manu o Navegante Polinésico según la energía que quieres representar.",
+        },
+        {
+          step: "02",
+          title: "Definimos lugar y fecha",
+          text: "Coordinamos la sesión en una locación natural o ceremonial de Rapa Nui.",
+        },
+        {
+          step: "03",
+          title: "Vives la experiencia",
+          text: "Aplicamos la pintura corporal, vestimenta y guía cultural antes de la sesión.",
+        },
+        {
+          step: "04",
+          title: "Recibes tu registro",
+          text: "Te llevas fotos profesionales y, si eliges el paquete cinemático, un video reel.",
+        },
+      ],
       packages: [
         {
           name: "Experiencia Premium",
@@ -124,46 +129,30 @@ function Home() {
       placesTitle: "Experience locations",
       placesText:
         "Choose a sacred, natural, or cinematic location for your session.",
-      packagesTitle: "Packages",
-      packagesText:
-        "Experiences designed for travelers, couples, and content creators.",
       processTitle: "How it works",
       processText:
         "A simple, thoughtful flow designed so you can experience Tākona with cultural meaning.",
-      process: [
-        {
-          step: "01",
-          title: "Choose your identity",
-          text: "Select Matato'a, Tangata Manu, or Polynesian Navigator based on the energy you want to represent.",
-        },
-        {
-          step: "02",
-          title: "Set place and date",
-          text: "We coordinate the session in a natural or ceremonial Rapa Nui location.",
-        },
-        {
-          step: "03",
-          title: "Live the experience",
-          text: "Body painting, ancestral dress, and cultural guidance come before the session.",
-        },
-        {
-          step: "04",
-          title: "Receive your memories",
-          text: "You receive professional photos and, with the cinematic package, a video reel.",
-        },
-      ],
+      packagesTitle: "Packages",
+      packagesText:
+        "Experiences designed for travelers, couples, and content creators.",
       identities: [
         {
           title: "Matato'a",
           description: "Strength, protection, and ancestral warrior spirit.",
+          meaning: "An identity of defense, leadership, and ceremonial presence.",
+          traits: ["Strength", "Protection", "Courage"],
         },
         {
           title: "Tangata Manu",
           description: "Ancestral wisdom, spiritual connection, and vision.",
+          meaning: "Inspired by Orongo, the sacred bird, and ritual transformation.",
+          traits: ["Vision", "Spirit", "Transformation"],
         },
         {
           title: "Polynesian Navigator",
           description: "An explorer guided by the stars and the ocean.",
+          meaning: "Represents journey, orientation, and ancestral Pacific memory.",
+          traits: ["Ocean", "Stars", "Journey"],
         },
       ],
       symbols: [
@@ -194,6 +183,28 @@ function Home() {
         { title: "Rano Kau", description: "Volcano, mist, and ceremonial landscape." },
         { title: "Tongariki", description: "Moai, sunrise, and ancestral presence." },
       ],
+      process: [
+        {
+          step: "01",
+          title: "Choose your identity",
+          text: "Select Matato'a, Tangata Manu, or Polynesian Navigator based on the energy you want to represent.",
+        },
+        {
+          step: "02",
+          title: "Set place and date",
+          text: "We coordinate the session in a natural or ceremonial Rapa Nui location.",
+        },
+        {
+          step: "03",
+          title: "Live the experience",
+          text: "Body painting, ancestral dress, and cultural guidance come before the session.",
+        },
+        {
+          step: "04",
+          title: "Receive your memories",
+          text: "You receive professional photos and, with the cinematic package, a video reel.",
+        },
+      ],
       packages: [
         {
           name: "Premium Experience",
@@ -210,78 +221,33 @@ function Home() {
   }[language];
 
   const identities = [
-    {
-      ...copy.identities[0],
-      image: matatoaHombre,
-      imageFemale: matatoaMujer,
-    },
-    {
-      ...copy.identities[1],
-      image: tangataHombre,
-      imageFemale: tangataMujer,
-    },
-    {
-      ...copy.identities[2],
-      image: naveganteHombre,
-      imageFemale: naveganteMujer,
-    },
+    { ...copy.identities[0], image: matatoaHombre, imageFemale: matatoaMujer },
+    { ...copy.identities[1], image: tangataHombre },
+    { ...copy.identities[2], image: naveganteHombre, imageFemale: naveganteMujer },
   ];
 
   const simbolos = [
-    {
-      ...copy.symbols[0],
-      image: makemake,
-    },
-    {
-      ...copy.symbols[1],
-      image: manutara,
-    },
-    {
-      ...copy.symbols[2],
-      image: tangatamanu,
-    },
-    {
-      ...copy.symbols[3],
-      image: navegante,
-    },
+    { ...copy.symbols[0], image: makemake },
+    { ...copy.symbols[1], image: manutara },
+    { ...copy.symbols[2], image: tangatamanu },
+    { ...copy.symbols[3], image: navegante },
   ];
 
   const locations = [
-    {
-      ...copy.locations[0],
-      video: "/videos/anakena.mp4",
-      image: naveganteMujer,
-    },
-    {
-      ...copy.locations[1],
-      video: "/videos/Orongo.mp4",
-      image: tangataHombre,
-    },
-    {
-      ...copy.locations[2],
-      video: "/videos/RanoKau.mp4",
-      image: matatoaMujer,
-    },
-    {
-      ...copy.locations[3],
-      video: "/videos/tongariki.mp4",
-      image: matatoaHombre,
-    },
+    { ...copy.locations[0], video: "/videos/anakena.mp4", image: naveganteMujer },
+    { ...copy.locations[1], video: "/videos/Orongo.mp4", image: tangataHombre },
+    { ...copy.locations[2], video: "/videos/RanoKau.mp4", image: matatoaMujer },
+    { ...copy.locations[3], video: "/videos/tongariki.mp4", image: matatoaHombre },
   ];
-
-  const packages = copy.packages;
 
   return (
     <>
       <Hero />
-
       <ExperienceBuilder />
 
       <section className="section">
         <h2 className="section-title">{copy.identitiesTitle}</h2>
-
         <p className="section-text">{copy.identitiesText}</p>
-
         <div className="grid">
           {identities.map((item) => (
             <IdentityCard key={item.title} {...item} />
@@ -291,9 +257,7 @@ function Home() {
 
       <section className="section dark-section">
         <h2 className="section-title">{copy.symbolsTitle}</h2>
-
         <p className="section-text">{copy.symbolsText}</p>
-
         <div className="grid">
           {simbolos.map((item) => (
             <SimboloCard key={item.title} {...item} />
@@ -303,9 +267,7 @@ function Home() {
 
       <section className="section">
         <h2 className="section-title">{copy.placesTitle}</h2>
-
         <p className="section-text">{copy.placesText}</p>
-
         <div className="grid">
           {locations.map((item) => (
             <LocationCard key={item.title} {...item} />
@@ -315,9 +277,7 @@ function Home() {
 
       <section className="section process-section">
         <h2 className="section-title">{copy.processTitle}</h2>
-
         <p className="section-text">{copy.processText}</p>
-
         <div className="process-grid">
           {copy.process.map((item) => (
             <article className="process-card" key={item.step}>
@@ -331,11 +291,9 @@ function Home() {
 
       <section className="section dark-section">
         <h2 className="section-title">{copy.packagesTitle}</h2>
-
         <p className="section-text">{copy.packagesText}</p>
-
         <div className="grid">
-          {packages.map((item) => (
+          {copy.packages.map((item) => (
             <PackageCard key={item.name} {...item} />
           ))}
         </div>

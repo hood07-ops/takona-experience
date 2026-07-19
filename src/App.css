@@ -1,5 +1,6 @@
 :root {
   --rongorongo-glyphs: url("/rongorongo-silver.webp");
+  --petroglyphs: url("/petroglyphs-rapanui.svg");
 }
 
 * {
@@ -29,11 +30,13 @@ body {
   opacity: 0.09;
   filter: blur(1.8px);
   background-image:
-    linear-gradient(rgba(5, 5, 5, 0.18), rgba(5, 5, 5, 0.86)),
+    radial-gradient(circle at 18% 18%, rgba(240, 195, 106, 0.08), transparent 26%),
+    linear-gradient(rgba(5, 5, 5, 0.28), rgba(5, 5, 5, 0.9)),
+    var(--petroglyphs),
     var(--rongorongo-glyphs);
-  background-size: cover, min(1120px, 125vw) min(980px, 120vw);
-  background-position: center, center 40px;
-  background-repeat: no-repeat, repeat-y;
+  background-size: cover, cover, min(980px, 120vw) min(980px, 120vw), min(1180px, 130vw) min(980px, 120vw);
+  background-position: center, center, center 30px, center 260px;
+  background-repeat: no-repeat, no-repeat, repeat-y, repeat-y;
 }
 
 .navbar {
@@ -191,9 +194,9 @@ body {
   pointer-events: none;
   opacity: 0.045;
   filter: blur(1.4px);
-  background-image: var(--rongorongo-glyphs);
-  background-size: 760px 760px;
-  background-position: right -170px top -120px;
+  background-image: var(--petroglyphs), var(--rongorongo-glyphs);
+  background-size: 640px 640px, 760px 760px;
+  background-position: left -180px top -160px, right -170px top -120px;
   background-repeat: no-repeat;
 }
 
@@ -272,6 +275,30 @@ body {
 .package-card p {
   color: #ccc;
   line-height: 1.7;
+}
+
+.identity-card .identity-meaning {
+  color: #e4d2a4;
+  font-size: 0.95rem;
+  margin-top: 14px;
+}
+
+.identity-traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin-top: 18px;
+}
+
+.identity-traits span {
+  border: 1px solid rgba(240, 195, 106, 0.35);
+  border-radius: 999px;
+  color: #f0c36a;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 7px 10px;
+  text-transform: uppercase;
 }
 
 .package-card {
@@ -448,9 +475,9 @@ body {
   pointer-events: none;
   opacity: 0.032;
   filter: blur(1.1px);
-  background-image: var(--rongorongo-glyphs);
-  background-size: 420px 420px;
-  background-position: right -160px top -90px;
+  background-image: var(--petroglyphs), var(--rongorongo-glyphs);
+  background-size: 360px 360px, 420px 420px;
+  background-position: left -150px bottom -150px, right -160px top -90px;
   background-repeat: no-repeat;
 }
 

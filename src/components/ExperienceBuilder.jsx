@@ -6,7 +6,6 @@ function ExperienceBuilder() {
   const [energia, setEnergia] = useState("warrior");
   const [takonaTipo, setTakonaTipo] = useState("protection");
   const [lugar, setLugar] = useState("Tongariki");
-
   const [nombre, setNombre] = useState("");
   const [pais, setPais] = useState("");
   const [email, setEmail] = useState("");
@@ -28,8 +27,8 @@ function ExperienceBuilder() {
       withTakona: "con Tākona de",
       book: "Reservar por WhatsApp",
       quote: "Solicitar cotización",
-      messageIntro: "Hola, quiero reservar una experiencia Tākona.",
-      quoteIntro: "Hola, quiero cotizar una experiencia Tākona.",
+      messageIntro: "Hola, quiero reservar una experiencia Takona.",
+      quoteIntro: "Hola, quiero cotizar una experiencia Takona.",
       clientData: "DATOS DEL CLIENTE",
       visitDate: "Fecha de visita",
       tentativeDate: "Fecha tentativa",
@@ -62,8 +61,8 @@ function ExperienceBuilder() {
       withTakona: "with a Tākona of",
       book: "Book on WhatsApp",
       quote: "Request a quote",
-      messageIntro: "Hello, I want to book a Tākona experience.",
-      quoteIntro: "Hello, I want to request a quote for a Tākona experience.",
+      messageIntro: "Hello, I want to book a Takona experience.",
+      quoteIntro: "Hello, I want to request a quote for a Takona experience.",
       clientData: "CLIENT DETAILS",
       visitDate: "Visit date",
       tentativeDate: "Tentative date",
@@ -99,13 +98,12 @@ ${copy.people}: ${personas}
 
 EXPERIENCIA:
 ${copy.identity}: ${energiaTexto}
-Tākona: ${takonaTexto}
+Takona: ${takonaTexto}
 ${copy.location}: ${lugar}`;
 
   return (
     <section className="builder-section">
       <h2 className="section-title">{copy.title}</h2>
-
       <p className="section-text">{copy.intro}</p>
 
       <div className="builder-grid">
@@ -149,26 +147,22 @@ ${copy.location}: ${lugar}`;
           value={nombre}
           onChange={(e) => setNombre(e.target.value)}
         />
-
         <input
           placeholder={copy.country}
           value={pais}
           onChange={(e) => setPais(e.target.value)}
         />
-
         <input
           placeholder="Email"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-
         <input
           type="date"
           value={fecha}
           onChange={(e) => setFecha(e.target.value)}
         />
-
         <select value={personas} onChange={(e) => setPersonas(e.target.value)}>
           <option>1</option>
           <option>2</option>
@@ -180,7 +174,6 @@ ${copy.location}: ${lugar}`;
 
       <div className="builder-result">
         <h3>{copy.resultTitle}</h3>
-
         <p>
           <strong>{energiaTexto}</strong> {copy.result} <strong>{lugar}</strong>{" "}
           {copy.withTakona} <strong>{takonaTexto}</strong>
@@ -210,7 +203,7 @@ ${copy.tentativeDate}: ${fecha}
 ${copy.people}: ${personas}
 
 ${copy.identity}: ${energiaTexto}
-Tākona: ${takonaTexto}
+Takona: ${takonaTexto}
 ${copy.location}: ${lugar}
 
 ${copy.consultation}:`

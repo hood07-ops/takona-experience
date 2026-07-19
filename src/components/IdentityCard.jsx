@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "../context/useLanguage";
 
-function IdentityCard({ title, description, image, imageFemale }) {
+function IdentityCard({ title, description, meaning, traits, image, imageFemale }) {
   const [showFemale, setShowFemale] = useState(false);
   const { language } = useLanguage();
 
@@ -24,6 +24,16 @@ function IdentityCard({ title, description, image, imageFemale }) {
       <div className="identity-content">
         <h3>{title}</h3>
         <p>{description}</p>
+
+        {meaning && <p className="identity-meaning">{meaning}</p>}
+
+        {traits && (
+          <div className="identity-traits">
+            {traits.map((trait) => (
+              <span key={trait}>{trait}</span>
+            ))}
+          </div>
+        )}
 
         {imageFemale && (
           <div className="identity-badge">

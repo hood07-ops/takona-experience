@@ -3,7 +3,6 @@ import IdentityCard from "../components/IdentityCard";
 import matatoaHombre from "../assets/takonas/matatoa-hombre.webp";
 import matatoaMujer from "../assets/takonas/matatoa-mujer.webp";
 import tangataHombre from "../assets/takonas/tangata-manu-hombre.webp";
-import tangataMujer from "../assets/takonas/tangata-manu-mujer.webp";
 import naveganteHombre from "../assets/takonas/navegante-hombre.webp";
 import naveganteMujer from "../assets/takonas/navegante-mujer.webp";
 import { useLanguage } from "../context/useLanguage";
@@ -13,37 +12,55 @@ function Identidades() {
   const copy = {
     es: {
       title: "Identidades Tākona",
-      text: "Cada visitante puede elegir una identidad ancestral masculina o femenina.",
+      text: "Cada identidad propone una energía distinta para la pintura corporal, la postura, la vestimenta y el relato de la experiencia.",
       identities: [
         {
           title: "Matato'a",
-          description: "Guerrero o guardiana protectora de su pueblo.",
+          description: "Representa fuerza, protección, carácter y presencia ceremonial.",
+          meaning:
+            "Es una identidad de defensa y liderazgo. Sus líneas suelen sentirse firmes, frontales y poderosas, como una armadura simbólica.",
+          traits: ["Fuerza", "Protección", "Valentía"],
         },
         {
           title: "Tangata Manu",
-          description: "Sabiduría, visión y conexión espiritual.",
+          description: "Evoca visión, transformación espiritual y conexión con Orongo.",
+          meaning:
+            "Se inspira en el Hombre Pájaro y en el vínculo entre acantilado, mar, ave y rito. Es una identidad de mirada profunda y movimiento ritual.",
+          traits: ["Visión", "Espíritu", "Transformación"],
         },
         {
           title: "Navegante Polinésico",
-          description: "Explorador guiado por las estrellas y el océano.",
+          description: "Conecta con el océano, las estrellas y la memoria viajera del Pacífico.",
+          meaning:
+            "Habla de orientación, viaje y pertenencia. Sus formas acompañan la idea de avanzar guiado por señales naturales y memoria ancestral.",
+          traits: ["Océano", "Estrellas", "Camino"],
         },
       ],
     },
     en: {
       title: "Tākona identities",
-      text: "Each visitor can choose an ancestral masculine or feminine identity.",
+      text: "Each identity brings a different energy into the body painting, posture, dress, and story of the experience.",
       identities: [
         {
           title: "Matato'a",
-          description: "Warrior or guardian protector of their people.",
+          description: "Represents strength, protection, character, and ceremonial presence.",
+          meaning:
+            "This is an identity of defense and leadership. Its lines feel firm, frontal, and powerful, like symbolic armor.",
+          traits: ["Strength", "Protection", "Courage"],
         },
         {
           title: "Tangata Manu",
-          description: "Wisdom, vision, and spiritual connection.",
+          description: "Evokes vision, spiritual transformation, and connection with Orongo.",
+          meaning:
+            "Inspired by the Birdman and the bond between cliff, sea, bird, and ritual. It carries a deep gaze and ritual movement.",
+          traits: ["Vision", "Spirit", "Transformation"],
         },
         {
           title: "Polynesian Navigator",
-          description: "Explorer guided by the stars and the ocean.",
+          description: "Connects with the ocean, the stars, and the voyaging memory of the Pacific.",
+          meaning:
+            "It speaks of orientation, journey, and belonging. Its forms carry the idea of moving forward guided by nature and ancestral memory.",
+          traits: ["Ocean", "Stars", "Journey"],
         },
       ],
     },
@@ -58,7 +75,6 @@ function Identidades() {
     {
       ...copy.identities[1],
       image: tangataHombre,
-      imageFemale: tangataMujer,
     },
     {
       ...copy.identities[2],
