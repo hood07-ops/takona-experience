@@ -9,7 +9,7 @@ function Navbar() {
       home: "Inicio",
       identities: "Identidades",
       bookings: "Reservas",
-      gallery: "Galería",
+      gallery: "Galer\u00eda",
       culture: "Cultura",
     },
     en: {
@@ -24,7 +24,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <Link className="logo" to="/">
-        Tākona
+        T\u0101kona
       </Link>
 
       <div className="nav-links">

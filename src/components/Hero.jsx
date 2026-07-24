@@ -7,14 +7,14 @@ function Hero() {
     es: {
       kicker: "RAPA NUI · MANA · CULTURA · HISTORIA",
       subtitle: "EXPERIENCIA RAPA NUI",
-      text: "Vive una experiencia cultural auténtica con Tākona, vestimenta ancestral, fotografía profesional y paisajes sagrados de Rapa Nui.",
+      text: "Vive una experiencia cultural aut\u00e9ntica con T\u0101kona, vestimenta ancestral, fotograf\u00eda profesional y paisajes sagrados de Rapa Nui.",
       reserve: "Reservar experiencia",
       culture: "Explorar cultura",
     },
     en: {
       kicker: "RAPA NUI · MANA · CULTURE · HISTORY",
       subtitle: "RAPA NUI EXPERIENCE",
-      text: "Live an authentic cultural experience with Tākona body painting, ancestral dress, professional photography, and sacred Rapa Nui landscapes.",
+      text: "Live an authentic cultural experience with T\u0101kona body painting, ancestral dress, professional photography, and sacred Rapa Nui landscapes.",
       reserve: "Book experience",
       culture: "Explore culture",
     },
@@ -31,7 +31,7 @@ function Hero() {
       <div className="hero-content">
         <p className="hero-kicker">{copy.kicker}</p>
 
-        <h1>Tākona</h1>
+        <h1>T\u0101kona</h1>
 
         <h2>{copy.subtitle}</h2>
 

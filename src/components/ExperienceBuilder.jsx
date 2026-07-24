@@ -15,18 +15,18 @@ function ExperienceBuilder() {
   const numeroWhatsApp = "56973199456";
   const copy = {
     es: {
-      title: "Diseña tu personaje Tākona",
-      intro: "Crea tu identidad simbólica antes de vivir la experiencia.",
-      energy: "Energía",
-      takona: "Tākona",
-      location: "Locación",
+      title: "Dise\u00f1a tu personaje T\u0101kona",
+      intro: "Crea tu identidad simb\u00f3lica antes de vivir la experiencia.",
+      energy: "Energ\u00eda",
+      takona: "T\u0101kona",
+      location: "Locaci\u00f3n",
       name: "Nombre completo",
-      country: "País",
-      resultTitle: "Tu experiencia será:",
+      country: "Pa\u00eds",
+      resultTitle: "Tu experiencia ser\u00e1:",
       result: "en",
-      withTakona: "con Tākona de",
+      withTakona: "con T\u0101kona de",
       book: "Reservar por WhatsApp",
-      quote: "Solicitar cotización",
+      quote: "Solicitar cotizaci\u00f3n",
       messageIntro: "Hola, quiero reservar una experiencia Takona.",
       quoteIntro: "Hola, quiero cotizar una experiencia Takona.",
       clientData: "DATOS DEL CLIENTE",
@@ -39,26 +39,26 @@ function ExperienceBuilder() {
         warrior: "Guerrero",
         navigator: "Navegante",
         birdman: "Tangata Manu",
-        volcano: "Espíritu del Volcán",
+        volcano: "Esp\u00edritu del Volc\u00e1n",
       },
       types: {
-        protection: "Protección",
-        wisdom: "Sabiduría",
+        protection: "Protecci\u00f3n",
+        wisdom: "Sabidur\u00eda",
         journey: "Viaje",
         strength: "Fuerza",
       },
     },
     en: {
-      title: "Design your Tākona character",
+      title: "Design your T\u0101kona character",
       intro: "Create your symbolic identity before living the experience.",
       energy: "Energy",
-      takona: "Tākona",
+      takona: "T\u0101kona",
       location: "Location",
       name: "Full name",
       country: "Country",
       resultTitle: "Your experience will be:",
       result: "in",
-      withTakona: "with a Tākona of",
+      withTakona: "with a T\u0101kona of",
       book: "Book on WhatsApp",
       quote: "Request a quote",
       messageIntro: "Hello, I want to book a Takona experience.",
@@ -183,7 +183,7 @@ ${copy.location}: ${lugar}`;
           <a
             className="gold-button"
             href={`https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(
-              mensaje
+              mensaje,
             )}`}
             target="_blank"
             rel="noreferrer"
@@ -206,7 +206,7 @@ ${copy.identity}: ${energiaTexto}
 Takona: ${takonaTexto}
 ${copy.location}: ${lugar}
 
-${copy.consultation}:`
+${copy.consultation}:`,
             )}`}
             target="_blank"
             rel="noreferrer"

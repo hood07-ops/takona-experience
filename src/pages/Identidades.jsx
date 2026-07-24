@@ -11,34 +11,34 @@ function Identidades() {
   const { language } = useLanguage();
   const copy = {
     es: {
-      title: "Identidades Tākona",
-      text: "Cada identidad propone una energía distinta para la pintura corporal, la postura, la vestimenta y el relato de la experiencia.",
+      title: "Identidades T\u0101kona",
+      text: "Cada identidad propone una energ\u00eda distinta para la pintura corporal, la postura, la vestimenta y el relato de la experiencia.",
       identities: [
         {
           title: "Matato'a",
-          description: "Representa fuerza, protección, carácter y presencia ceremonial.",
+          description: "Representa fuerza, protecci\u00f3n, car\u00e1cter y presencia ceremonial.",
           meaning:
-            "Es una identidad de defensa y liderazgo. Sus líneas suelen sentirse firmes, frontales y poderosas, como una armadura simbólica.",
-          traits: ["Fuerza", "Protección", "Valentía"],
+            "Es una identidad de defensa y liderazgo. Sus l\u00edneas se sienten firmes, frontales y poderosas, como una armadura simb\u00f3lica.",
+          traits: ["Fuerza", "Protecci\u00f3n", "Valent\u00eda"],
         },
         {
           title: "Tangata Manu",
-          description: "Evoca visión, transformación espiritual y conexión con Orongo.",
+          description: "Evoca visi\u00f3n, transformaci\u00f3n espiritual y conexi\u00f3n con Orongo.",
           meaning:
-            "Se inspira en el Hombre Pájaro y en el vínculo entre acantilado, mar, ave y rito. Es una identidad de mirada profunda y movimiento ritual.",
-          traits: ["Visión", "Espíritu", "Transformación"],
+            "Se inspira en el Hombre P\u00e1jaro y en el v\u00ednculo entre acantilado, mar, ave y rito. Es una identidad de mirada profunda y movimiento ritual.",
+          traits: ["Visi\u00f3n", "Esp\u00edritu", "Transformaci\u00f3n"],
         },
         {
-          title: "Navegante Polinésico",
-          description: "Conecta con el océano, las estrellas y la memoria viajera del Pacífico.",
+          title: "Navegante Polin\u00e9sico",
+          description: "Conecta con el oc\u00e9ano, las estrellas y la memoria viajera del Pac\u00edfico.",
           meaning:
-            "Habla de orientación, viaje y pertenencia. Sus formas acompañan la idea de avanzar guiado por señales naturales y memoria ancestral.",
-          traits: ["Océano", "Estrellas", "Camino"],
+            "Habla de orientaci\u00f3n, viaje y pertenencia. Sus formas acompa\u00f1an la idea de avanzar guiado por se\u00f1ales naturales y memoria ancestral.",
+          traits: ["Oc\u00e9ano", "Estrellas", "Camino"],
         },
       ],
     },
     en: {
-      title: "Tākona identities",
+      title: "T\u0101kona identities",
       text: "Each identity brings a different energy into the body painting, posture, dress, and story of the experience.",
       identities: [
         {
