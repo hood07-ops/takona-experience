@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -11,17 +11,31 @@ import Cultura from "./pages/Cultura";
 import "./App.css";
 
 function App() {
+  const [path, setPath] = useState(window.location.pathname);
+
+  useEffect(() => {
+    const updatePath = () => setPath(window.location.pathname);
+    window.addEventListener("popstate", updatePath);
+    window.addEventListener("app:navigate", updatePath);
+    return () => {
+      window.removeEventListener("popstate", updatePath);
+      window.removeEventListener("app:navigate", updatePath);
+    };
+  }, []);
+
+  const pages = {
+    "/": <Home />,
+    "/identidades": <Identidades />,
+    "/reservas": <Reservas />,
+    "/galeria": <Galeria />,
+    "/cultura": <Cultura />,
+  };
+
   return (
     <div className="app">
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/identidades" element={<Identidades />} />
-        <Route path="/reservas" element={<Reservas />} />
-        <Route path="/galeria" element={<Galeria />} />
-        <Route path="/cultura" element={<Cultura />} />
-      </Routes>
+      {pages[path] ?? <Home />}
 
       <Footer />
       <FloatingWhatsApp />

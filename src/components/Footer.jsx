@@ -9,9 +9,9 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <h3>T\u0101kona Experience</h3>
+      <h3>Tākona Experience</h3>
       <p>{text}</p>
-      <p>\u00a9 2026 T\u0101kona Experience Rapa Nui</p>
+      <p>© 2026 Tākona Experience Rapa Nui</p>
     </footer>
   );
 }

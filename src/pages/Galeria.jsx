@@ -24,9 +24,9 @@ function Galeria() {
           counter: "20 selected photos",
         }
       : {
-          title: "Galer\u00eda",
-          text: "Momentos reales de T\u0101kona: preparaci\u00f3n, ceremonia, danza, pintura corporal y escena Rapa Nui.",
-          alt: "Momento de pintura corporal T\u0101kona y presentaci\u00f3n Rapa Nui",
+          title: "Galería",
+          text: "Momentos reales de Tākona: preparación, ceremonia, danza, pintura corporal y escena Rapa Nui.",
+          alt: "Momento de pintura corporal Tākona y presentación Rapa Nui",
           close: "Cerrar",
           next: "Siguiente",
           previous: "Anterior",

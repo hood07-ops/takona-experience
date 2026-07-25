@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { useLanguage } from "../context/useLanguage";
+import AppLink from "./AppLink";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 function Navbar() {
@@ -9,7 +9,7 @@ function Navbar() {
       home: "Inicio",
       identities: "Identidades",
       bookings: "Reservas",
-      gallery: "Galer\u00eda",
+      gallery: "Galería",
       culture: "Cultura",
     },
     en: {
@@ -23,16 +23,16 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link className="logo" to="/">
-        T\u0101kona
-      </Link>
+      <AppLink className="logo" to="/">
+        Tākona
+      </AppLink>
 
       <div className="nav-links">
-        <Link to="/">{nav.home}</Link>
-        <Link to="/identidades">{nav.identities}</Link>
-        <Link to="/reservas">{nav.bookings}</Link>
-        <Link to="/galeria">{nav.gallery}</Link>
-        <Link to="/cultura">{nav.culture}</Link>
+        <AppLink to="/">{nav.home}</AppLink>
+        <AppLink to="/identidades">{nav.identities}</AppLink>
+        <AppLink to="/reservas">{nav.bookings}</AppLink>
+        <AppLink to="/galeria">{nav.gallery}</AppLink>
+        <AppLink to="/cultura">{nav.culture}</AppLink>
       </div>
 
       <LanguageSwitcher />

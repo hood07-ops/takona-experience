@@ -5,24 +5,24 @@ function Cultura() {
   const copy = {
     es: {
       title: "Cultura Rapa Nui",
-      whatTitle: "\u00bfQu\u00e9 es T\u0101kona?",
+      whatTitle: "¿Qué es Tākona?",
       whatText:
-        "T\u0101kona es una forma de pintura corporal ancestral ligada a s\u00edmbolos, identidad, territorio y espiritualidad rapanui.",
-      designTitle: "Lectura de los dise\u00f1os",
+        "Tākona es una forma de pintura corporal ancestral ligada a símbolos, identidad, territorio y espiritualidad rapanui.",
+      designTitle: "Lectura de los diseños",
       designText:
-        "Las l\u00edneas pueden sugerir fuerza, protecci\u00f3n, viaje, transformaci\u00f3n o v\u00ednculo con el oc\u00e9ano. Cada composici\u00f3n debe sentirse coherente con la identidad elegida.",
+        "Las líneas pueden sugerir fuerza, protección, viaje, transformación o vínculo con el océano. Cada composición debe sentirse coherente con la identidad elegida.",
       respectTitle: "Respeto cultural",
       respectText:
-        "Esta experiencia busca compartir la cultura desde el respeto, la educaci\u00f3n consciente y una presentaci\u00f3n cuidada para el visitante.",
-      authenticTitle: "Experiencia aut\u00e9ntica",
+        "Esta experiencia busca compartir la cultura desde el respeto, la educación consciente y una presentación cuidada para el visitante.",
+      authenticTitle: "Experiencia auténtica",
       authenticText:
-        "No buscamos crear disfraces tur\u00edsticos, sino experiencias con sentido, historia, est\u00e9tica y conexi\u00f3n con Rapa Nui.",
+        "No buscamos crear disfraces turísticos, sino experiencias con sentido, historia, estética y conexión con Rapa Nui.",
     },
     en: {
       title: "Rapa Nui culture",
-      whatTitle: "What is T\u0101kona?",
+      whatTitle: "What is Tākona?",
       whatText:
-        "T\u0101kona is an ancestral form of body painting connected to symbols, identity, territory, and Rapa Nui spirituality.",
+        "Tākona is an ancestral form of body painting connected to symbols, identity, territory, and Rapa Nui spirituality.",
       designTitle: "Reading the designs",
       designText:
         "The lines can suggest strength, protection, journey, transformation, or a bond with the ocean. Each composition should feel connected to the chosen identity.",

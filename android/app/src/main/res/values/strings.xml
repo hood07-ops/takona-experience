@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Tākona Experience</string>
+    <string name="title_activity_main">Tākona Experience</string>
+    <string name="package_name">cl.takona.experience</string>
+    <string name="custom_url_scheme">cl.takona.experience</string>
+</resources>

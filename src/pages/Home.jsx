@@ -23,44 +23,44 @@ function Home() {
     es: {
       identitiesTitle: "Elige tu identidad",
       identitiesText:
-        "Cada experiencia representa una conexi\u00f3n espiritual y cultural con Rapa Nui.",
-      symbolsTitle: "Simbolog\u00eda ancestral",
+        "Cada experiencia representa una conexión espiritual y cultural con Rapa Nui.",
+      symbolsTitle: "Simbología ancestral",
       symbolsText:
-        "Conoce algunos de los s\u00edmbolos m\u00e1s importantes de la cultura Rapa Nui.",
+        "Conoce algunos de los símbolos más importantes de la cultura Rapa Nui.",
       placesTitle: "Lugares de experiencia",
       placesText:
-        "Elige una locaci\u00f3n sagrada, natural o cinematogr\u00e1fica para tu sesi\u00f3n.",
-      processTitle: "C\u00f3mo funciona",
+        "Elige una locación sagrada, natural o cinematográfica para tu sesión.",
+      processTitle: "Cómo funciona",
       processText:
-        "Un recorrido simple, cuidado y pensado para que vivas T\u0101kona con sentido cultural.",
+        "Un recorrido simple, cuidado y pensado para que vivas Tākona con sentido cultural.",
       packagesTitle: "Paquetes",
       packagesText:
-        "Experiencias dise\u00f1adas para turistas, parejas y creadores de contenido.",
+        "Experiencias diseñadas para turistas, parejas y creadores de contenido.",
       identities: [
         {
           title: "Matato'a",
-          description: "Fuerza, protecci\u00f3n y esp\u00edritu guerrero ancestral.",
+          description: "Fuerza, protección y espíritu guerrero ancestral.",
           meaning: "Identidad de defensa, liderazgo y presencia ceremonial.",
-          traits: ["Fuerza", "Protecci\u00f3n", "Valent\u00eda"],
+          traits: ["Fuerza", "Protección", "Valentía"],
         },
         {
           title: "Tangata Manu",
-          description: "Sabidur\u00eda ancestral, conexi\u00f3n espiritual y visi\u00f3n.",
-          meaning: "Inspirado en Orongo, el ave sagrada y la transformaci\u00f3n ritual.",
-          traits: ["Visi\u00f3n", "Esp\u00edritu", "Transformaci\u00f3n"],
+          description: "Sabiduría ancestral, conexión espiritual y visión.",
+          meaning: "Inspirado en Orongo, el ave sagrada y la transformación ritual.",
+          traits: ["Visión", "Espíritu", "Transformación"],
         },
         {
-          title: "Navegante Polin\u00e9sico",
-          description: "Explorador guiado por las estrellas y el oc\u00e9ano.",
-          meaning: "Representa viaje, orientaci\u00f3n y memoria ancestral del Pac\u00edfico.",
-          traits: ["Oc\u00e9ano", "Estrellas", "Camino"],
+          title: "Navegante Polinésico",
+          description: "Explorador guiado por las estrellas y el océano.",
+          meaning: "Representa viaje, orientación y memoria ancestral del Pacífico.",
+          traits: ["Océano", "Estrellas", "Camino"],
         },
       ],
       symbols: [
         {
           title: "Make Make",
           description:
-            "Deidad creadora de Rapa Nui, s\u00edmbolo de fertilidad, abundancia y origen de la vida.",
+            "Deidad creadora de Rapa Nui, símbolo de fertilidad, abundancia y origen de la vida.",
         },
         {
           title: "Manutara",
@@ -70,50 +70,50 @@ function Home() {
         {
           title: "Tangata Manu",
           description:
-            "Representaci\u00f3n del Hombre P\u00e1jaro, liderazgo, valent\u00eda y conexi\u00f3n espiritual.",
+            "Representación del Hombre Pájaro, liderazgo, valentía y conexión espiritual.",
         },
         {
-          title: "Navegaci\u00f3n Polin\u00e9sica",
+          title: "Navegación Polinésica",
           description:
-            "Arte ancestral de navegar guiado por las estrellas, el viento y el oc\u00e9ano.",
+            "Arte ancestral de navegar guiado por las estrellas, el viento y el océano.",
         },
       ],
       locations: [
-        { title: "Anakena", description: "Arena blanca, mar turquesa y energ\u00eda ancestral." },
-        { title: "Orongo", description: "Historia del Tangata Manu y vista al oc\u00e9ano profundo." },
-        { title: "Rano Kau", description: "Volc\u00e1n, niebla y paisaje ceremonial." },
-        { title: "Tongariki", description: "Mo\u00e1is, amanecer y presencia ancestral." },
+        { title: "Anakena", description: "Arena blanca, mar turquesa y energía ancestral." },
+        { title: "Orongo", description: "Historia del Tangata Manu y vista al océano profundo." },
+        { title: "Rano Kau", description: "Volcán, niebla y paisaje ceremonial." },
+        { title: "Tongariki", description: "Moáis, amanecer y presencia ancestral." },
       ],
       process: [
         {
           step: "01",
           title: "Elige tu identidad",
-          text: "Selecciona Matato'a, Tangata Manu o Navegante Polin\u00e9sico seg\u00fan la energ\u00eda que quieres representar.",
+          text: "Selecciona Matato'a, Tangata Manu o Navegante Polinésico según la energía que quieres representar.",
         },
         {
           step: "02",
           title: "Definimos lugar y fecha",
-          text: "Coordinamos la sesi\u00f3n en una locaci\u00f3n natural o ceremonial de Rapa Nui.",
+          text: "Coordinamos la sesión en una locación natural o ceremonial de Rapa Nui.",
         },
         {
           step: "03",
           title: "Vives la experiencia",
-          text: "Aplicamos la pintura corporal, vestimenta y gu\u00eda cultural antes de la sesi\u00f3n.",
+          text: "Aplicamos la pintura corporal, vestimenta y guía cultural antes de la sesión.",
         },
         {
           step: "04",
           title: "Recibes tu registro",
-          text: "Te llevas fotos profesionales y, si eliges el paquete cinematogr\u00e1fico, un video reel.",
+          text: "Te llevas fotos profesionales y, si eliges el paquete cinematográfico, un video reel.",
         },
       ],
       packages: [
         {
           name: "Experiencia Premium",
           price: "$85.000 CLP",
-          detail: "T\u0101kona + traje + sesi\u00f3n profesional.",
+          detail: "Tākona + traje + sesión profesional.",
         },
         {
-          name: "Experiencia Cinem\u00e1tica",
+          name: "Experiencia Cinemática",
           price: "$150.000 CLP",
           detail: "Fotos + video reel + historia cultural.",
         },
@@ -131,7 +131,7 @@ function Home() {
         "Choose a sacred, natural, or cinematic location for your session.",
       processTitle: "How it works",
       processText:
-        "A simple, thoughtful flow designed so you can experience T\u0101kona with cultural meaning.",
+        "A simple, thoughtful flow designed so you can experience Tākona with cultural meaning.",
       packagesTitle: "Packages",
       packagesText:
         "Experiences designed for travelers, couples, and content creators.",
@@ -209,7 +209,7 @@ function Home() {
         {
           name: "Premium Experience",
           price: "$85.000 CLP",
-          detail: "T\u0101kona + outfit + professional session.",
+          detail: "Tākona + outfit + professional session.",
         },
         {
           name: "Cinematic Experience",

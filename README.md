@@ -1,16 +1,50 @@
-# React + Vite
+# Tākona Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web/PWA para presentar experiencias culturales Rapa Nui, identidades de tākona, galería visual y reservas por WhatsApp.
 
-Currently, two official plugins are available:
+## Desarrollo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Verificación
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm run lint
+npm run build
+```
 
-## Expanding the ESLint configuration
+## Publicación Web
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+La app está preparada para Vercel y se publica como sitio web:
+
+https://takona-experience.vercel.app/
+
+También incluye manifest, iconos y service worker para instalarse como PWA desde el navegador.
+
+## App Android
+
+La base Android está creada con Capacitor en `android/`.
+
+Para generar un APK debug se necesita Java/JDK y Android SDK:
+
+```bash
+npm run android:apk
+```
+
+El APK queda en:
+
+```text
+android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+Para publicar en Play Store falta configurar firma release con keystore.
+
+## App iPhone
+
+iPhone no usa APK. Las opciones son:
+
+- PWA: instalar la página desde Safari.
+- App iOS: usar el proyecto `ios/` con macOS, Xcode y una cuenta Apple Developer para generar IPA/TestFlight/App Store.

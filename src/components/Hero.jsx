@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import AppLink from "./AppLink";
 import { useLanguage } from "../context/useLanguage";
 
 function Hero() {
@@ -7,14 +7,14 @@ function Hero() {
     es: {
       kicker: "RAPA NUI · MANA · CULTURA · HISTORIA",
       subtitle: "EXPERIENCIA RAPA NUI",
-      text: "Vive una experiencia cultural aut\u00e9ntica con T\u0101kona, vestimenta ancestral, fotograf\u00eda profesional y paisajes sagrados de Rapa Nui.",
+      text: "Vive una experiencia cultural auténtica con Tākona, vestimenta ancestral, fotografía profesional y paisajes sagrados de Rapa Nui.",
       reserve: "Reservar experiencia",
       culture: "Explorar cultura",
     },
     en: {
       kicker: "RAPA NUI · MANA · CULTURE · HISTORY",
       subtitle: "RAPA NUI EXPERIENCE",
-      text: "Live an authentic cultural experience with T\u0101kona body painting, ancestral dress, professional photography, and sacred Rapa Nui landscapes.",
+      text: "Live an authentic cultural experience with Tākona body painting, ancestral dress, professional photography, and sacred Rapa Nui landscapes.",
       reserve: "Book experience",
       culture: "Explore culture",
     },
@@ -31,20 +31,20 @@ function Hero() {
       <div className="hero-content">
         <p className="hero-kicker">{copy.kicker}</p>
 
-        <h1>T\u0101kona</h1>
+        <h1>Tākona</h1>
 
         <h2>{copy.subtitle}</h2>
 
         <p>{copy.text}</p>
 
         <div className="hero-buttons">
-          <Link className="gold-button" to="/reservas">
+          <AppLink className="gold-button" to="/reservas">
             {copy.reserve}
-          </Link>
+          </AppLink>
 
-          <Link className="dark-button" to="/cultura">
+          <AppLink className="dark-button" to="/cultura">
             {copy.culture}
-          </Link>
+          </AppLink>
         </div>
       </div>
     </section>
