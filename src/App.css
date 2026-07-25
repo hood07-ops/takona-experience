@@ -1,6 +1,7 @@
 :root {
   --rongorongo-glyphs: url("/rongorongo-silver.webp");
   --petroglyphs: url("/petroglyphs-rapanui.svg");
+  --takona-paddle: url("/takona-paddle-bg.webp");
 }
 
 * {
@@ -37,6 +38,20 @@ body {
   background-size: cover, cover, min(980px, 120vw) min(980px, 120vw), min(1180px, 130vw) min(980px, 120vw);
   background-position: center, center, center 30px, center 260px;
   background-repeat: no-repeat, no-repeat, repeat-y, repeat-y;
+}
+
+.app::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.22;
+  filter: saturate(0.9) contrast(1.08);
+  background-image: var(--takona-paddle);
+  background-repeat: no-repeat;
+  background-position: right 7vw center;
+  background-size: clamp(190px, 24vw, 390px) auto;
 }
 
 .navbar {
@@ -649,6 +664,12 @@ body {
 }
 
 @media (max-width: 700px) {
+  .app::after {
+    opacity: 0.15;
+    background-position: right -90px center;
+    background-size: 260px auto;
+  }
+
   .navbar {
     position: relative;
     flex-direction: column;
