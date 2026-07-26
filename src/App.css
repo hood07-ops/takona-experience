@@ -46,12 +46,21 @@ body {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  opacity: 0.22;
+  opacity: 0.2;
   filter: saturate(0.9) contrast(1.08);
-  background-image: var(--takona-paddle);
+  background-image:
+    var(--takona-paddle),
+    var(--takona-paddle),
+    var(--takona-paddle);
   background-repeat: no-repeat;
-  background-position: right 7vw center;
-  background-size: clamp(190px, 24vw, 390px) auto;
+  background-position:
+    right 7vw center,
+    left 5vw top 18vh,
+    left 48vw bottom -18vh;
+  background-size:
+    clamp(190px, 24vw, 390px) auto,
+    clamp(150px, 18vw, 290px) auto,
+    clamp(170px, 20vw, 330px) auto;
 }
 
 .navbar {
@@ -665,9 +674,15 @@ body {
 
 @media (max-width: 700px) {
   .app::after {
-    opacity: 0.15;
-    background-position: right -90px center;
-    background-size: 260px auto;
+    opacity: 0.14;
+    background-position:
+      right -90px center,
+      left -120px top 26vh,
+      center bottom -160px;
+    background-size:
+      260px auto,
+      220px auto,
+      240px auto;
   }
 
   .navbar {
